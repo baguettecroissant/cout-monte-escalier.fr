@@ -32,7 +32,7 @@ export function Footer() {
                         Obtenez 3 devis gratuits d'artisans qualifiés près de chez vous.
                     </p>
                     <Link
-                        href="#"
+                        href="/devis"
                         className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors w-full text-center"
                     >
                         Comparer les prix

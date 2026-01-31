@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getCityFromSlug, getAllCitySlugs, generateCityMetadata } from "@/lib/seo-utils";
 import { getCityIntro } from "@/lib/text-utils";
 import { CityHero } from "@/components/features/CityHero";
+import { ViteUnDevisWidget } from "@/components/affiliation/ViteUnDevisWidget";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { DepartmentBreadcrumb } from "@/components/psea/DepartmentBreadcrumb";
 import { NearbyCitiesModule } from "@/components/psea/NearbyCitiesModule";
@@ -69,31 +70,22 @@ export default async function CityPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Price Placeholder */}
-                <section className="mb-16 bg-slate-50 p-8 rounded-2xl border border-slate-100">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                        Quel prix pour un monte-escalier à {city.name} ?
-                    </h2>
-                    <p className="text-slate-600 mb-6">
-                        Les tarifs varient selon la configuration de votre escalier. Voici les moyennes observées
-                        en {city.region} :
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
-                            <div className="text-slate-500 font-medium mb-2">Droit Standard</div>
-                            <div className="text-3xl font-extrabold text-slate-900">2 800 €</div>
-                            <div className="text-xs text-slate-400">Prix moyen installé</div>
+
+                {/* Quote Widget Section */}
+                <section className="mb-16" id="devis">
+                    <div className="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-100">
+                        <div className="max-w-2xl mx-auto text-center mb-8">
+                            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                                Comparez les tarifs à {city.name}
+                            </h2>
+                            <p className="text-slate-600 font-medium">
+                                Obtenez jusqu'à 3 devis gratuits d'artisans certifiés RGE intervenant à {city.name} ({city.zip}).
+                                <br />
+                                <span className="text-sm text-slate-500 font-normal">Réponse sous 48h • Sans engagement</span>
+                            </p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
-                            <div className="text-slate-500 font-medium mb-2">Tournant</div>
-                            <div className="text-3xl font-extrabold text-slate-900">7 500 €</div>
-                            <div className="text-xs text-slate-400">Prix moyen installé</div>
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
-                            <div className="text-slate-500 font-medium mb-2">Extérieur</div>
-                            <div className="text-3xl font-extrabold text-slate-900">5 200 €</div>
-                            <div className="text-xs text-slate-400">Prix moyen installé</div>
-                        </div>
+
+                        <ViteUnDevisWidget />
                     </div>
                 </section>
 

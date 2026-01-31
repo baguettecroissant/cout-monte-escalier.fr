@@ -1,30 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { getAllGuides } from "@/data/guides-content";
 
 export const metadata = {
     title: "Guides & Conseils Monte-Escalier | Cout-Monte-Escalier.fr",
     description: "Nos dossiers complets pour bien choisir votre monte-escalier : prix, aides financières, modèles et installation.",
 };
 
-const guides = [
-    {
-        title: "Guide complet du Crédit d'Impôt 2026",
-        slug: "credit-impot-monte-escalier",
-        excerpt: "Comment bénéficier de 25% de crédit d'impôt et de MaPrimeAdapt' pour votre installation ?"
-    },
-    {
-        title: "Monte-escalier d'occasion : bonne ou mauvaise idée ?",
-        slug: "monte-escalier-occasion",
-        excerpt: "Les pièges à éviter et les garanties indispensables avant d'acheter un modèle reconditionné."
-    },
-    {
-        title: "Prix moyen d'un monte-escalier tournant",
-        slug: "prix-monte-escalier-tournant",
-        excerpt: "Détail des coûts pour les escaliers courbes ou avec palier intermédiaire."
-    }
-];
-
 export default function GuidesPage() {
+    const guides = getAllGuides();
     return (
         <div className="container mx-auto px-4 py-16">
             <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Guides & Conseils</h1>
@@ -35,6 +20,16 @@ export default function GuidesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {guides.map((guide) => (
                     <Card key={guide.slug} className="hover:shadow-lg transition-shadow border-slate-200">
+                        {guide.image && (
+                            <div className="relative w-full h-48 -mt-6">
+                                <Image
+                                    src={guide.image}
+                                    alt={guide.title}
+                                    fill
+                                    className="object-cover rounded-t-xl"
+                                />
+                            </div>
+                        )}
                         <CardHeader>
                             <CardTitle className="text-xl text-slate-900 line-clamp-2">{guide.title}</CardTitle>
                         </CardHeader>

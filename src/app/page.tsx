@@ -38,19 +38,14 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 h-14 rounded-xl shadow-lg shadow-orange-900/20 w-full sm:w-auto transition-all transform hover:scale-105">
-                Comparer les prix gratuitement
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="/devis">
+                <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 h-14 rounded-xl shadow-lg shadow-orange-900/20 w-full sm:w-auto transition-all transform hover:scale-105">
+                  Comparer les prix gratuitement
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
 
               <div className="flex items-center gap-3 text-slate-300 px-4">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3].map(i => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-slate-800 bg-slate-700 flex items-center justify-center text-xs text-white font-bold">
-                      {["JD", "ML", "AB"][i - 1]}
-                    </div>
-                  ))}
-                </div>
                 <div className="text-sm">
                   <span className="font-bold text-white block">1 500+</span>
                   familles accompagnées
@@ -277,10 +272,12 @@ export default function Home() {
           <p className="text-xl text-orange-100 mb-10">
             Ne laissez plus vos escaliers décider pour vous. Comparez les solutions dès aujourd'hui.
           </p>
-          <Button size="lg" className="bg-white text-orange-600 hover:bg-slate-100 text-xl px-12 h-16 rounded-full shadow-2xl transition-transform hover:scale-105">
-            Lancer ma demande de devis
-            <ArrowRight className="ml-2 h-6 w-6" />
-          </Button>
+          <Link href="/devis">
+            <Button size="lg" className="bg-white text-orange-600 hover:bg-slate-100 text-xl px-12 h-16 rounded-full shadow-2xl transition-transform hover:scale-105">
+              Lancer ma demande de devis
+              <ArrowRight className="ml-2 h-6 w-6" />
+            </Button>
+          </Link>
           <p className="mt-6 text-sm text-orange-200 opacity-80">
             Gratuit • Sans engagement • 3 devis maximum
           </p>

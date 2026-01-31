@@ -27,10 +27,12 @@ export function Header() {
                         </a>
                     </div>
 
-                    <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 h-12 shadow-md hover:shadow-lg transition-all rounded-full">
-                        <FileText className="mr-2 h-5 w-5" />
-                        Devis Gratuit
-                    </Button>
+                    <Link href="/devis">
+                        <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 h-12 shadow-md hover:shadow-lg transition-all rounded-full">
+                            <FileText className="mr-2 h-5 w-5" />
+                            Devis Gratuit
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </header>
