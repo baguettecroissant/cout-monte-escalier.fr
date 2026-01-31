@@ -13,11 +13,12 @@ export async function generateSitemaps() {
     return Array.from({ length: count }, (_, id) => ({ id }));
 }
 
-export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
+export default async function sitemap({ id }: { id: number | Promise<number> }): Promise<MetadataRoute.Sitemap> {
     const citySlugs = getAllCitySlugs();
+    const sitemapId = await id;
 
     // Main sitemap (id 0) also includes static pages
-    if (id === 0) {
+    if (Number(sitemapId) === 0) {
         // Get the first chunk of cities
         const start = 0;
         const end = ITEMS_PER_SITEMAP;
@@ -47,7 +48,7 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
         ];
     } else {
         // Other sitemaps just contain cities
-        const start = id * ITEMS_PER_SITEMAP;
+        const start = Number(sitemapId) * ITEMS_PER_SITEMAP;
         const end = start + ITEMS_PER_SITEMAP;
         const currentBatch = citySlugs.slice(start, end);
 
