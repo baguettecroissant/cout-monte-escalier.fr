@@ -17,15 +17,7 @@ export function Header() {
 
                 {/* Desktop Navigation / Call to Action */}
                 <div className="flex items-center gap-6">
-                    <div className="hidden md:flex flex-col items-end">
-                        <div className="flex items-center gap-2 text-slate-600 text-sm font-medium">
-                            <Phone className="h-4 w-4" />
-                            <span>Conseillers disponibles 7j/7</span>
-                        </div>
-                        <a href="tel:0123456789" className="text-xl font-bold text-slate-900 hover:text-orange-600 transition-colors">
-                            01 23 45 67 89
-                        </a>
-                    </div>
+
 
                     <Link href="/devis">
                         <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 h-12 shadow-md hover:shadow-lg transition-all rounded-full">
