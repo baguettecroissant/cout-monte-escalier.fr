@@ -61,7 +61,9 @@ export default async function GuidePost({ params }: PageProps) {
                         </div>
                         <div className="flex items-center gap-2">
                             <User className="h-4 w-4" />
-                            {guide.author}
+                            <Link href="/qui-sommes-nous" className="hover:text-orange-600 hover:underline transition-colors">
+                                {guide.author}
+                            </Link>
                         </div>
                     </div>
                 </div>
