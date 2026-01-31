@@ -15,7 +15,9 @@ type Props = {
 
 export async function generateStaticParams() {
     const slugs = getAllCitySlugs();
-    return slugs.map((slug) => ({
+    // Only pre-render the first 1000 cities to avoid "Body exceeded 75000kb limit" during deployment
+    // The rest will be generated on demand (ISR)
+    return slugs.slice(0, 1000).map((slug) => ({
         slug,
     }));
 }
