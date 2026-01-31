@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getCityFromSlug, getAllCitySlugs, generateCityMetadata } from "@/lib/seo-utils";
+import { getCityIntro } from "@/lib/text-utils";
 import { CityHero } from "@/components/features/CityHero";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { DepartmentBreadcrumb } from "@/components/psea/DepartmentBreadcrumb";
@@ -34,14 +35,8 @@ export default async function CityPage({ params }: Props) {
     }
 
     // Dynamic Text Logic
-    let introText = "";
-    const isLargeCity = (city.population || 0) > 10000;
-
-    if (isLargeCity) {
-        introText = `Grande ville du ${city.department_name}, ${city.name} dispose de nombreux installateurs qualifiés pour sécuriser votre escalier.`;
-    } else {
-        introText = `Village paisible, ${city.name} est parfaitement couverte par les techniciens de la région ${city.region}, habitués à intervenir en zone rurale.`;
-    }
+    // Dynamic Text Logic
+    const introText = getCityIntro(city);
 
     return (
         <div className="min-h-screen bg-white">
