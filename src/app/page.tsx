@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Shield, Star, MapPin, Euro, Clock, HeartHandshake, BookOpen } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { getAllGuides } from "@/data/guides-content";
 
 export default function Home() {
   return (
@@ -162,27 +163,43 @@ export default function Home() {
             </div>
 
             {/* Sidebar Widget 2 - Guides */}
-            <div className="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm">
-              <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                <BookOpen className="h-5 w-5 text-blue-600" /> Les Guides Experts
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link href="/guides" className="text-sm text-slate-600 hover:text-orange-600 font-medium flex items-center gap-2">
-                    <ChevronRight className="h-3 w-3" /> Comment obtenir MaPrimeAdapt' ?
+            <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+              <div className="p-6 border-b border-slate-100 bg-slate-50">
+                <h3 className="font-bold text-slate-900 flex items-center gap-2">
+                  <BookOpen className="h-5 w-5 text-orange-600" /> Guides Récents
+                </h3>
+              </div>
+              <div className="divide-y divide-slate-100">
+                {getAllGuides().slice(0, 3).map((guide) => (
+                  <Link key={guide.slug} href={`/guides/${guide.slug}`} className="flex gap-4 p-4 hover:bg-slate-50 transition-colors group">
+                    <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden bg-slate-100">
+                      {guide.image ? (
+                        <Image
+                          src={guide.image}
+                          alt={guide.title}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-slate-300">
+                          <BookOpen className="h-8 w-8" />
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-orange-600 transition-colors line-clamp-2 mb-1">
+                        {guide.title}
+                      </h4>
+                      <p className="text-xs text-slate-500">{guide.date}</p>
+                    </div>
                   </Link>
-                </li>
-                <li>
-                  <Link href="/guides" className="text-sm text-slate-600 hover:text-orange-600 font-medium flex items-center gap-2">
-                    <ChevronRight className="h-3 w-3" /> Comparatif : Stannah vs Thyssenkrupp
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/guides" className="text-sm text-slate-600 hover:text-orange-600 font-medium flex items-center gap-2">
-                    <ChevronRight className="h-3 w-3" /> Location de monte-escalier : bonne idée ?
-                  </Link>
-                </li>
-              </ul>
+                ))}
+              </div>
+              <div className="p-4 bg-slate-50 text-center">
+                <Link href="/guides" className="text-sm font-medium text-orange-600 hover:text-orange-700">
+                  Voir tous les articles →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
