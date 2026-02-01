@@ -7,27 +7,15 @@ import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { DepartmentBreadcrumb } from "@/components/psea/DepartmentBreadcrumb";
 import { NearbyCitiesModule } from "@/components/psea/NearbyCitiesModule";
 import { Metadata } from "next";
+import { LocalAidsModule } from "@/components/psea/LocalAidsModule";
+import { StepsModule } from "@/components/psea/StepsModule";
 
 // Next.js 15 params
 type Props = {
     params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-    const slugs = getAllCitySlugs();
-    // Only pre-render the first 1000 cities to avoid "Body exceeded 75000kb limit" during deployment
-    // The rest will be generated on demand (ISR)
-    return slugs.slice(0, 1000).map((slug) => ({
-        slug,
-    }));
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { slug } = await params;
-    const city = getCityFromSlug(slug);
-    if (!city) return {};
-    return generateCityMetadata(city);
-}
+// ... existing imports
 
 export default async function CityPage({ params }: Props) {
     const { slug } = await params;
@@ -37,7 +25,6 @@ export default async function CityPage({ params }: Props) {
         notFound();
     }
 
-    // Dynamic Text Logic
     // Dynamic Text Logic
     const introText = getCityIntro(city);
 
@@ -72,6 +59,7 @@ export default async function CityPage({ params }: Props) {
                     </div>
                 </section>
 
+                <StepsModule city={city} />
 
                 {/* Quote Widget Section */}
                 <section className="mb-16" id="devis">
@@ -91,21 +79,37 @@ export default async function CityPage({ params }: Props) {
                     </div>
                 </section>
 
+                <LocalAidsModule city={city} />
+
                 {/* FAQ Section */}
-                <section className="mb-16">
+                <section className="mb-16 mt-16">
                     <h2 className="text-3xl font-bold text-slate-900 mb-8">Questions fréquentes à {city.name}</h2>
                     <div className="space-y-6">
-                        <div>
-                            <h3 className="text-xl font-semibold text-slate-800 mb-2">Existe-t-il des aides à {city.name} ?</h3>
+                        <div className="bg-white border border-slate-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-slate-800 mb-2">Quel est le prix moyen d'un monte-escalier à {city.name} ?</h3>
                             <p className="text-slate-600">
-                                Oui, vous pouvez prétendre à MaPrimeAdapt' ou au crédit d'impôt (50%) qui s'appliquent partout en France, y compris à {city.name}.
-                                Le département {city.department_name} peut également proposer d'autres aides spécifiques.
+                                Le prix dépend de la configuration de votre escalier. À {city.name}, pour un escalier droit, comptez entre 2 500 € et 5 000 €. Pour un tournant, le budget se situe généralement entre 6 000 € et 10 000 €, pose incluse.
                             </p>
                         </div>
-                        <div>
+
+                        <div className="bg-white border border-slate-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-slate-800 mb-2">Existe-t-il des aides à {city.name} ({city.department_code}) ?</h3>
+                            <p className="text-slate-600">
+                                Oui, vous pouvez prétendre à MaPrimeAdapt' (jusqu'à 70% de prise en charge) ou au crédit d'impôt. Le département {city.department_name} via la {city.department_info?.aide_locale || 'MDPH'} peut également proposer des allocations comme l'APA.
+                            </p>
+                        </div>
+
+                        <div className="bg-white border border-slate-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                             <h3 className="text-xl font-semibold text-slate-800 mb-2">Combien de temps pour l'installation ?</h3>
                             <p className="text-slate-600">
-                                Pour un escalier droit à {city.name}, comptez 2 à 3 semaines de fabrication. Pour un tournant, le délai est de 4 à 6 semaines.
+                                Les installateurs du secteur {city.zip} interviennent généralement rapidement. Comptez 2 à 3 semaines de fabrication pour un droit, et 4 à 6 semaines pour un courbe sur-mesure. La pose elle-même ne dure qu'une demi-journée.
+                            </p>
+                        </div>
+
+                        <div className="bg-white border border-slate-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-semibold text-slate-800 mb-2">Où trouver un réparateur de monte-escalier à {city.name} ?</h3>
+                            <p className="text-slate-600">
+                                Nos partenaires installateurs assurent également le SAV et l'entretien annuel obligatoire. En passant par notre comparateur, vous êtes mis en relation avec des professionnels locaux qui garantissent un dépannage rapide dans le {city.department_code}.
                             </p>
                         </div>
                     </div>

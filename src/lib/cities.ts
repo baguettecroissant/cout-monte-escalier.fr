@@ -71,3 +71,7 @@ export function getCitiesByDepartment(deptCode: string): City[] {
 export function getAllDepartments(): DepartmentInfo[] {
     return departmentsData;
 }
+
+export function getDepartmentsByRegion(region: string): DepartmentInfo[] {
+    return departmentsData.filter(d => d.region === region);
+}

@@ -10,6 +10,12 @@ export interface City {
         lng: number;
     };
     population?: number;
+    department_info?: {
+        code: string;
+        name: string;
+        region: string;
+        aide_locale: string;
+    };
 }
 
 export interface LeadFormStart {

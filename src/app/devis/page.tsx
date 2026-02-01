@@ -1,6 +1,7 @@
 
 import { ViteUnDevisWidget } from "@/components/affiliation/ViteUnDevisWidget";
 import { CheckCircle, Shield, Clock } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
     title: "Devis Gratuit Monte-Escalier | Comparateur 2026",
@@ -70,6 +71,94 @@ export default function DevisPage() {
                         <div className="bg-slate-900 p-6 rounded-xl text-center text-white">
                             <div className="text-4xl font-bold text-orange-400 mb-2">1 500+</div>
                             <div className="text-slate-300">Familles accompagnées en 2026</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* SEO Content Section */}
+                <div className="mt-20 pt-16 border-t border-slate-200">
+                    <div className="grid lg:grid-cols-3 gap-12">
+                        <div className="lg:col-span-2">
+                            <article className="prose prose-slate max-w-none">
+                                <h2 className="text-2xl font-bold text-slate-900 mb-6">Pourquoi comparer plusieurs devis monte-escalier ?</h2>
+                                <p>
+                                    L'installation d'un monte-escalier est un projet sur-mesure dont le prix peut varier du simple au double selon les prestataires.
+                                    En moyenne, nos utilisateurs constatent des écarts de prix allant jusqu'à <strong>30%</strong> pour une configuration identique.
+                                </p>
+                                <p>
+                                    Demander plusieurs devis vous permet de :
+                                </p>
+                                <ul className="list-disc pl-5 space-y-2 text-slate-700 mb-6">
+                                    <li>Comparer les <strong>solutions techniques</strong> proposées (monorail vs double rail).</li>
+                                    <li>Négocier les tarifs en faisant jouer la concurrence locale.</li>
+                                    <li>Vérifier les garanties et les contrats de maintenance inclus.</li>
+                                </ul>
+
+                                <h2 className="text-2xl font-bold text-slate-900 mb-6 mt-12">Quels éléments font varier le devis ?</h2>
+                                <p>
+                                    Le coût final dépend de plusieurs facteurs clés que vous retrouverez détaillés dans notre <Link href="/guides/prix-monte-escalier-2026" className="text-orange-600 hover:underline font-medium">guide des prix 2026</Link> :
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                                        <strong className="text-slate-900 block mb-1">La configuration de l'escalier</strong>
+                                        <span className="text-slate-600 text-sm">Escalier droit (le moins cher) ou tournant (sur-mesure nécessaire).</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                                        <strong className="text-slate-900 block mb-1">Les options de confort</strong>
+                                        <span className="text-slate-600 text-sm">Siège pivotant automatique, rail relevable, coloris du rail...</span>
+                                    </li>
+                                    <li className="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                                        <strong className="text-slate-900 block mb-1">Les travaux annexes</strong>
+                                        <span className="text-slate-600 text-sm">Besoin d'une prise électrique dédiée ou modifications de la menuiserie.</span>
+                                    </li>
+                                </ul>
+
+                                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-lg">
+                                    <h3 className="text-blue-900 font-bold mb-2">Bon à savoir : Les aides financières</h3>
+                                    <p className="text-blue-800 text-sm">
+                                        L'installation d'un monte-escalier donne droit à des aides de l'État comme <strong>MaPrimeAdapt'</strong> (jusqu'à 70% de prise en charge) ou le crédit d'impôt.
+                                        Consultez notre dossier complet sur le <Link href="/guides/remboursement-monte-escalier-securite-sociale" className="underline hover:text-blue-600">remboursement et les aides</Link>.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div className="lg:col-span-1">
+                            <div className="sticky top-24">
+                                <h3 className="text-xl font-bold text-slate-900 mb-6">Questions Fréquentes</h3>
+                                <div className="space-y-4">
+                                    <details className="group bg-white rounded-lg border border-slate-200 overflow-hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-slate-900 group-hover:bg-slate-50 transition-colors">
+                                            La demande est-elle payante ?
+                                            <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                                        </summary>
+                                        <div className="p-4 pt-0 text-sm text-slate-600 leading-relaxed">
+                                            Non, notre service de mise en relation est <strong>100% gratuit</strong> pour vous. Nous sommes rémunérés par les artisans partenaires, ce qui n'impacte pas votre devis final.
+                                        </div>
+                                    </details>
+
+                                    <details className="group bg-white rounded-lg border border-slate-200 overflow-hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-slate-900 group-hover:bg-slate-50 transition-colors">
+                                            Suis-je engagé ?
+                                            <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                                        </summary>
+                                        <div className="p-4 pt-0 text-sm text-slate-600 leading-relaxed">
+                                            Absolument pas. Vous recevez vos devis librement. Si aucune proposition ne vous convient, vous n'avez aucune obligation de signer.
+                                        </div>
+                                    </details>
+
+                                    <details className="group bg-white rounded-lg border border-slate-200 overflow-hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-slate-900 group-hover:bg-slate-50 transition-colors">
+                                            Quelle durée de validité ?
+                                            <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                                        </summary>
+                                        <div className="p-4 pt-0 text-sm text-slate-600 leading-relaxed">
+                                            Un devis est généralement valable entre <strong>1 et 3 mois</strong>. Au-delà, les tarifs des matériaux peuvent évoluer.
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

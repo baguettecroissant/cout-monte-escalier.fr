@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
-import { getAllDepartments, getCitiesByDepartment, getDepartmentByCode } from "@/lib/cities";
+import { getAllDepartments, getCitiesByDepartment, getDepartmentByCode, getDepartmentsByRegion } from "@/lib/cities";
 import Link from "next/link";
 import { Metadata } from "next";
 import { DepartmentCities } from "@/components/psea/DepartmentCities";
+import { Map } from "lucide-react";
 
 // Slug format: "gironde-33"
 type Props = {
@@ -47,6 +48,9 @@ export default async function DepartmentPage({ params }: Props) {
     // Alphabetical sort for consistent directory listing
     cities.sort((a, b) => a.name.localeCompare(b.name));
 
+    // Fetch neighbor departments
+    const neighborDepts = getDepartmentsByRegion(dept.region).filter(d => d.code !== dept.code);
+
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Dept */}
@@ -75,6 +79,28 @@ export default async function DepartmentPage({ params }: Props) {
                         departmentCode={dept.code}
                         cities={cities}
                     />
+
+                    {/* Neighbor Departments Section */}
+                    {neighborDepts.length > 0 && (
+                        <div className="mt-16 pt-16 border-t border-slate-200">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                                <Map className="h-6 w-6 text-orange-500" />
+                                Autres départements en {dept.region}
+                            </h2>
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                {neighborDepts.map((d) => (
+                                    <Link
+                                        key={d.code}
+                                        href={`/annuaire/${d.name.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')}-${d.code}`}
+                                        className="flex items-center justify-between p-4 bg-white border border-slate-200 rounded-xl hover:border-orange-500 hover:shadow-md transition-all group"
+                                    >
+                                        <span className="font-medium text-slate-700 group-hover:text-orange-700">{d.name}</span>
+                                        <span className="text-sm text-slate-400 bg-slate-50 px-2 py-1 rounded group-hover:bg-orange-50 group-hover:text-orange-600">{d.code}</span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
         </div>
