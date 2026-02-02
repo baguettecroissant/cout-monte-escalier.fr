@@ -1,36 +1,23 @@
 import { MetadataRoute } from 'next';
-import { getAllCitySlugs } from '@/lib/seo-utils';
+import { getAllCitySlugs, getAllDepartmentCodes, getCitiesByDepartment } from '@/lib/seo-utils';
 
 const BASE_URL = 'https://cout-monte-escalier.fr';
-const ITEMS_PER_SITEMAP = 5000;
 
 export async function generateSitemaps() {
-    // 35k+ cities, so we need multiple sitemaps
-    const citySlugs = getAllCitySlugs();
-    const count = Math.ceil(citySlugs.length / ITEMS_PER_SITEMAP);
+    // Generate sitemaps for 'main' (static pages) and each department
+    const departmentCodes = getAllDepartmentCodes();
 
-    // Create an array of IDs from 0 to count-1
-    return Array.from({ length: count }, (_, id) => ({ id }));
+    return [
+        { id: 'main' },
+        ...departmentCodes.map(code => ({ id: code }))
+    ];
 }
 
-export default async function sitemap({ id }: { id: number | Promise<number> }): Promise<MetadataRoute.Sitemap> {
-    const citySlugs = getAllCitySlugs();
-    const sitemapId = await id;
+export default async function sitemap({ id }: { id: string }): Promise<MetadataRoute.Sitemap> {
+    const sitemapId = id;
 
-    // Main sitemap (id 0) also includes static pages
-    if (Number(sitemapId) === 0) {
-        // Get the first chunk of cities
-        const start = 0;
-        const end = ITEMS_PER_SITEMAP;
-        const currentBatch = citySlugs.slice(start, end);
-
-        const cityUrls = currentBatch.map((slug) => ({
-            url: `${BASE_URL}/prix-monte-escalier/${slug}`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.8,
-        }));
-
+    // Main sitemap (id 'main') includes static pages
+    if (sitemapId === 'main') {
         return [
             {
                 url: BASE_URL,
@@ -44,16 +31,13 @@ export default async function sitemap({ id }: { id: number | Promise<number> }):
                 changeFrequency: 'weekly',
                 priority: 0.9,
             },
-            ...cityUrls,
         ];
     } else {
-        // Other sitemaps just contain cities
-        const start = Number(sitemapId) * ITEMS_PER_SITEMAP;
-        const end = start + ITEMS_PER_SITEMAP;
-        const currentBatch = citySlugs.slice(start, end);
+        // Department sitemaps contain cities for that department
+        const departmentCities = getCitiesByDepartment(sitemapId);
 
-        return currentBatch.map((slug) => ({
-            url: `${BASE_URL}/prix-monte-escalier/${slug}`,
+        return departmentCities.map((city) => ({
+            url: `${BASE_URL}/prix-monte-escalier/${city.slug}`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.8,

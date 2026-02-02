@@ -26,3 +26,11 @@ export function generateCityMetadata(city: City) {
         description: `Quel est le prix d'un monte-escalier à ${city.name} ? Comparez les tarifs des installateurs du département ${city.department_name} et obtenez votre devis gratuit.`,
     };
 }
+
+export function getAllDepartmentCodes(): string[] {
+    return departmentsData.map(d => d.code);
+}
+
+export function getCitiesByDepartment(departmentCode: string): City[] {
+    return cities.filter(c => c.department_code === departmentCode);
+}
