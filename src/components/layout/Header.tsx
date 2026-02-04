@@ -10,13 +10,8 @@ export function Header() {
 
     const navLinks = [
         { href: "/guides", label: "Guides", icon: BookOpen },
-        { href: "/marques", label: "Marques", icon: MapPin },
         { href: "/outils", label: "Outils", icon: Wrench },
         { href: "/annuaire", label: "Annuaire", icon: MapPin },
-        { href: "/faq", label: "FAQ", icon: BookOpen },
-        { href: "/glossaire", label: "Glossaire", icon: BookOpen },
-        { href: "/qui-sommes-nous", label: "Qui Sommes-Nous", icon: BookOpen },
-        { href: "/mentions-legales", label: "Mentions Légales", icon: BookOpen },
     ];
 
     return (
