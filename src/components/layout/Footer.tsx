@@ -21,7 +21,10 @@ export function Footer() {
                         <li><Link href="/" className="text-slate-300 hover:text-white transition-colors text-lg">Accueil</Link></li>
                         <li><Link href="/guides" className="text-slate-300 hover:text-white transition-colors text-lg">Guides & Conseils</Link></li>
                         <li><Link href="/outils" className="text-slate-300 hover:text-white transition-colors text-lg">Outils Gratuits</Link></li>
+                        <li><Link href="/marques" className="text-slate-300 hover:text-white transition-colors text-lg">Marques</Link></li>
                         <li><Link href="/annuaire" className="text-slate-300 hover:text-white transition-colors text-lg">Annuaire</Link></li>
+                        <li><Link href="/faq" className="text-slate-300 hover:text-white transition-colors text-lg">FAQ</Link></li>
+                        <li><Link href="/glossaire" className="text-slate-300 hover:text-white transition-colors text-lg">Glossaire</Link></li>
                         <li><Link href="/qui-sommes-nous" className="text-slate-300 hover:text-white transition-colors text-lg">Qui Sommes-Nous</Link></li>
                         <li><Link href="/mentions-legales" className="text-slate-300 hover:text-white transition-colors text-lg">Mentions Légales</Link></li>
                     </ul>

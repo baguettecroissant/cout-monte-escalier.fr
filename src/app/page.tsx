@@ -145,6 +145,7 @@ export default function Home() {
             </ul>
             <p>
               <strong>Attention :</strong> Ces prix sont donnés avant déduction des aides. Avec <span className="text-orange-600 font-bold">MaPrimeAdapt'</span>, vous pouvez obtenir jusqu'à 70% de financement sur ces montants !
+              Pour en savoir plus sur les fabricants, consultez notre <Link href="/marques" className="text-orange-600 font-medium underline">comparatif des marques de monte-escalier</Link>.
             </p>
           </div>
 
@@ -326,6 +327,11 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+          <div className="mt-8 text-center">
+            <Link href="/faq" className="inline-flex items-center text-orange-600 font-medium hover:underline">
+              Consulter notre FAQ complète <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
