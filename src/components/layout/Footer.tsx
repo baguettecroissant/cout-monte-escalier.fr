@@ -20,9 +20,10 @@ export function Footer() {
                     <ul className="space-y-3">
                         <li><Link href="/" className="text-slate-300 hover:text-white transition-colors text-lg">Accueil</Link></li>
                         <li><Link href="/guides" className="text-slate-300 hover:text-white transition-colors text-lg">Guides & Conseils</Link></li>
+                        <li><Link href="/outils" className="text-slate-300 hover:text-white transition-colors text-lg">Outils Gratuits</Link></li>
+                        <li><Link href="/annuaire" className="text-slate-300 hover:text-white transition-colors text-lg">Annuaire</Link></li>
                         <li><Link href="/qui-sommes-nous" className="text-slate-300 hover:text-white transition-colors text-lg">Qui Sommes-Nous</Link></li>
                         <li><Link href="/mentions-legales" className="text-slate-300 hover:text-white transition-colors text-lg">Mentions Légales</Link></li>
-                        <li><Link href="/mentions-legales#confidentialite" className="text-slate-300 hover:text-white transition-colors text-lg">Politique de Confidentialité</Link></li>
                     </ul>
                 </div>
 
