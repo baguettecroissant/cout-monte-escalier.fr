@@ -255,6 +255,51 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">Questions Fréquentes</h2>
 
+          {/* FAQPage Schema.org */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Quelles sont les aides disponibles en 2026 ?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "L'aide principale est MaPrimeAdapt', qui finance jusqu'à 50% ou 70% des travaux selon vos revenus. Vous pouvez également bénéficier d'un crédit d'impôt de 25% si vous n'êtes pas éligible à MaPrimeAdapt', ainsi que d'une TVA réduite à 5,5%."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Le monte-escalier abîme-t-il les murs ?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Non, dans 99% des cas, le rail est fixé directement sur les marches de l'escalier, pas au mur. Cela garantit une solidité maximale et évite de percer vos cloisons. L'installation est propre et sans gros travaux."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Peut-on installer un monte-escalier dehors ?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Tout à fait. Il existe des modèles Outdoor spécialement conçus pour résister à la pluie, au gel et aux UV. Ils sont livrés avec une housse de protection et une clé de verrouillage pour la sécurité."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Quelle est la durée de vie de l'appareil ?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Un monte-escalier de marque reconnue (Stannah, Otolift, Handicare...) a une durée de vie moyenne de 15 à 20 ans avec un entretien annuel régulier. Les batteries se changent généralement tous les 3 à 5 ans."
+                    }
+                  }
+                ]
+              })
+            }}
+          />
+
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-lg font-semibold text-slate-800">Quelles sont les aides disponibles en 2026 ?</AccordionTrigger>

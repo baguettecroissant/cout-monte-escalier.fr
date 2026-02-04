@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { DepartmentCities } from "@/components/psea/DepartmentCities";
 import { Map } from "lucide-react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 
 // Slug format: "gironde-33"
 type Props = {
@@ -54,21 +55,33 @@ export default async function DepartmentPage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Dept */}
-            <section className="bg-slate-900 text-white relative pb-32 pt-20">
-                <div className="container mx-auto px-4 text-center relative z-10">
-                    <div className="inline-block bg-white/10 text-orange-300 px-3 py-1 rounded-full text-sm font-medium mb-6 border border-white/10">
-                        Département {dept.code}
+            <section className="bg-slate-900 text-white relative pb-32 pt-12">
+                <div className="container mx-auto px-4 relative z-10">
+                    {/* Breadcrumbs */}
+                    <div className="text-slate-400">
+                        <Breadcrumbs
+                            items={[
+                                { label: "Annuaire", href: "/annuaire" },
+                                { label: `${dept.name} (${dept.code})` },
+                            ]}
+                        />
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                        Installateurs Monte-Escalier <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">{dept.name}</span>
-                    </h1>
-                    <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                        Trouvez un artisan certifié RGE dans la région {dept.region}.
-                        Profitez des aides locales ({dept.aide_locale}) pour financer votre projet.
-                    </p>
+
+                    <div className="text-center mt-4">
+                        <div className="inline-block bg-white/10 text-orange-300 px-3 py-1 rounded-full text-sm font-medium mb-6 border border-white/10">
+                            Département {dept.code}
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                            Installateurs Monte-Escalier <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">{dept.name}</span>
+                        </h1>
+                        <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                            Trouvez un artisan certifié RGE dans la région {dept.region}.
+                            Profitez des aides locales ({dept.aide_locale}) pour financer votre projet.
+                        </p>
+                    </div>
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 pointer-events-none"></div>
                 </div>
-                {/* Background Pattern */}
-                <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 pointer-events-none"></div>
             </section>
 
             {/* Interactive Cities Section */}

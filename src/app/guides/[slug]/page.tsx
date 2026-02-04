@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { getGuideBySlug, getAllGuides } from "@/data/guides-content";
 import { ViteUnDevisWidget } from "@/components/affiliation/ViteUnDevisWidget";
-import { ArrowLeft, Calendar, User, CheckCircle } from "lucide-react";
+import { Calendar, User, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -47,10 +48,12 @@ export default async function GuidePost({ params }: PageProps) {
             {/* Header / Breadcrumb */}
             <div className="bg-slate-50 border-b border-slate-200 py-8">
                 <div className="container mx-auto px-4">
-                    <Link href="/guides" className="inline-flex items-center text-slate-500 hover:text-orange-600 mb-6 transition-colors">
-                        <ArrowLeft className="h-4 w-4 mr-2" />
-                        Retour aux guides
-                    </Link>
+                    <Breadcrumbs
+                        items={[
+                            { label: "Guides", href: "/guides" },
+                            { label: guide.title },
+                        ]}
+                    />
                     <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight max-w-4xl">
                         {guide.title}
                     </h1>
