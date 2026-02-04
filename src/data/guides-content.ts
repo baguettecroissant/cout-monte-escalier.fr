@@ -14,6 +14,536 @@ export interface GuideArticle {
 
 export const GUIDES: GuideArticle[] = [
     {
+        slug: "monte-escalier-occasion",
+        title: "Monte-Escalier d'Occasion : Bonne ou Mauvaise Idée ? Guide 2026",
+        excerpt: "Économisez 30 à 50% avec un monte-escalier reconditionné. Mais attention aux pièges ! Voici les vérifications essentielles avant d'acheter.",
+        date: "2026-02-04",
+        author: "Équipe Rédaction",
+        image: "/images/blog/monte-escalier-occasion.png",
+        metaTitle: "Monte-Escalier Occasion : Prix, Risques et Conseils 2026",
+        metaDescription: "Acheter un monte-escalier d'occasion : économie réelle ou fausse bonne idée ? Prix, garanties, vérifications obligatoires. Guide expert.",
+        imagePrompt: "A refurbished stairlift being inspected by a technician",
+        content: `
+<p>Face à un budget serré, l'achat d'un <strong>monte-escalier d'occasion</strong> peut sembler une solution attractive. Les prix affichés sont souvent 30% à 50% inférieurs au neuf. Mais cette économie apparente cache parfois des risques importants. Voici notre analyse complète pour vous aider à prendre la bonne décision.</p>
+
+<h2>Prix d'un monte-escalier d'occasion en 2026</h2>
+
+<p>Les tarifs varient considérablement selon l'état, l'âge et la marque de l'équipement :</p>
+
+<ul>
+<li><strong>Monte-escalier droit reconditionné :</strong> entre 1 500€ et 3 000€ (contre 2 500€ à 5 000€ neuf)</li>
+<li><strong>Monte-escalier tournant reconditionné :</strong> entre 4 000€ et 7 000€ (contre 8 000€ à 14 000€ neuf)</li>
+<li><strong>Occasion entre particuliers :</strong> à partir de 800€ (mais risques élevés)</li>
+</ul>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Un monte-escalier tournant est fabriqué sur-mesure pour un escalier spécifique. La probabilité qu'un modèle d'occasion s'adapte parfaitement à VOTRE escalier est quasi nulle. Privilégiez l'occasion uniquement pour les escaliers droits.</p></div>
+
+<h2>Les 5 vérifications indispensables avant d'acheter</h2>
+
+<h3>1. L'âge de l'équipement</h3>
+<p>Un monte-escalier de qualité a une durée de vie de 15 à 20 ans. Au-delà de 10 ans, les pièces détachées deviennent difficiles à trouver et les pannes plus fréquentes. <strong>Exigez systématiquement la date de fabrication.</strong></p>
+
+<h3>2. L'état des batteries</h3>
+<p>Les batteries sont le point faible numéro un. Leur coût de remplacement varie entre <strong>200€ et 500€</strong>. Des batteries fatiguées peuvent réduire l'autonomie ou provoquer des arrêts inopinés.</p>
+
+<h3>3. Le rapport d'entretien</h3>
+<p>Un historique de maintenance régulière (idéalement annuelle) est un indicateur de qualité. Méfiez-vous des équipements sans carnet d'entretien.</p>
+
+<h3>4. La garantie proposée</h3>
+<p>Un professionnel sérieux offre une garantie d'au moins <strong>12 mois</strong> sur le reconditionné. Sans garantie = danger.</p>
+
+<h3>5. La compatibilité avec votre escalier</h3>
+<p>Faites réaliser une visite technique avant tout engagement. Les rails doivent être adaptables à votre configuration.</p>
+
+<div class="my-8 text-center"><a href="/devis" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Comparer avec des devis neufs gratuits</a></div>
+
+<h2>Où acheter un monte-escalier d'occasion ?</h2>
+
+<h3>Vendeurs professionnels (recommandé)</h3>
+<p>Certains installateurs proposent des modèles reconditionnés avec garantie. Que vous soyez en <a href='/annuaire/gironde-33' class='text-orange-600 hover:underline'>Gironde</a> ou en <a href='/annuaire/loire-atlantique-44' class='text-orange-600 hover:underline'>Loire-Atlantique</a>, demandez à plusieurs professionnels s'ils ont des équipements reconditionnés.</p>
+
+<h3>Sites de petites annonces (risqué)</h3>
+<p>LeBonCoin, ParuVendu... Ces plateformes proposent des prix attractifs mais aucune garantie. Le démontage et la réinstallation nécessitent un professionnel qualifié (comptez 500€ à 1 000€ supplémentaires).</p>
+
+<h2>Notre verdict : occasion ou neuf ?</h2>
+
+<p>L'occasion peut être intéressante si :</p>
+<ul>
+<li>Vous avez un escalier droit standard</li>
+<li>Le vendeur est un professionnel avec garantie</li>
+<li>L'équipement a moins de 8 ans</li>
+<li>Les batteries sont récentes ou incluses dans le prix</li>
+</ul>
+
+<p>Dans tous les autres cas, <strong>le neuf reste le choix le plus sûr</strong>, surtout avec les aides financières disponibles (MaPrimeAdapt' jusqu'à 70% de prise en charge).</p>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Avant de vous tourner vers l'occasion par souci d'économie, simulez votre éligibilité aux aides. Avec MaPrimeAdapt', un monte-escalier neuf à 8 000€ peut revenir à 2 400€ seulement pour un ménage modeste.</p></div>
+        `
+    },
+    {
+        slug: "location-monte-escalier",
+        title: "Location Monte-Escalier : Prix, Conditions et Alternatives 2026",
+        excerpt: "Louer plutôt qu'acheter ? Dès 80€/mois, la location peut être une solution. Découvrez les conditions, durées et pièges à éviter.",
+        date: "2026-02-04",
+        author: "Équipe Rédaction",
+        image: "/images/blog/location-monte-escalier.png",
+        metaTitle: "Location Monte-Escalier 2026 : Prix et Conditions",
+        metaDescription: "Location de monte-escalier dès 80€/mois. Conditions, durée minimale, ce qui est inclus. Comparatif location vs achat pour un choix éclairé.",
+        imagePrompt: "A stairlift with rental documents and calendar",
+        content: `
+<p>La <strong>location de monte-escalier</strong> est une option méconnue qui peut s'avérer pertinente dans certaines situations : convalescence temporaire, attente d'une place en EHPAD, ou hébergement provisoire chez un proche. Voici tout ce qu'il faut savoir sur cette formule en 2026.</p>
+
+<h2>Prix de la location en 2026</h2>
+
+<p>Les tarifs de location varient selon le type d'escalier et la durée d'engagement :</p>
+
+<ul>
+<li><strong>Escalier droit :</strong> de 80€ à 150€/mois</li>
+<li><strong>Escalier tournant :</strong> de 150€ à 300€/mois (rare car sur-mesure)</li>
+<li><strong>Frais d'installation :</strong> généralement 500€ à 1 500€ (non remboursés)</li>
+<li><strong>Durée minimale :</strong> souvent 12 à 24 mois</li>
+</ul>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Faites le calcul total : frais d'installation + (loyer mensuel × durée minimale). Au-delà de 24 mois, l'achat devient presque toujours plus avantageux, surtout avec les aides.</p></div>
+
+<h2>Ce que comprend généralement la location</h2>
+
+<h3>Inclus dans la plupart des contrats :</h3>
+<ul>
+<li>L'équipement (siège, rail, motorisation)</li>
+<li>L'installation et le démontage</li>
+<li>La maintenance préventive</li>
+<li>Les dépannages et réparations</li>
+<li>Le remplacement des batteries</li>
+</ul>
+
+<h3>À votre charge :</h3>
+<ul>
+<li>Frais d'installation (souvent non remboursables)</li>
+<li>Assurance habitation adaptée</li>
+<li>Éventuels travaux électriques</li>
+</ul>
+
+<h2>Pour qui la location est-elle adaptée ?</h2>
+
+<h3>Situations favorables à la location :</h3>
+<ul>
+<li><strong>Besoin temporaire (moins de 2 ans)</strong> : convalescence après une opération, rééducation</li>
+<li><strong>Incertitude sur l'avenir</strong> : projet de déménagement, de vente de la maison</li>
+<li><strong>Test avant achat</strong> : pour vérifier l'adaptation au quotidien</li>
+<li><strong>Non-éligibilité aux aides</strong> : si vos revenus dépassent les plafonds</li>
+</ul>
+
+<h3>Situations défavorables :</h3>
+<ul>
+<li>Besoin de plus de 3 ans (l'achat revient moins cher)</li>
+<li>Éligibilité à MaPrimeAdapt' (jusqu'à 70% de prise en charge)</li>
+<li>Escalier tournant (peu de loueurs proposent du sur-mesure)</li>
+</ul>
+
+<div class="my-8 text-center"><a href="/calculateur-aides" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Calculer mes aides avant de décider</a></div>
+
+<h2>Comparatif : location vs achat</h2>
+
+<p>Prenons l'exemple d'un monte-escalier droit standard :</p>
+
+<table class="w-full border-collapse my-6">
+<thead>
+<tr class="bg-slate-100">
+<th class="border p-3 text-left">Critère</th>
+<th class="border p-3 text-left">Location (3 ans)</th>
+<th class="border p-3 text-left">Achat (avec aides)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-3">Coût initial</td>
+<td class="border p-3">800€ (installation)</td>
+<td class="border p-3">3 500€ (équipement)</td>
+</tr>
+<tr>
+<td class="border p-3">Coût mensuel</td>
+<td class="border p-3">100€/mois</td>
+<td class="border p-3">0€</td>
+</tr>
+<tr>
+<td class="border p-3">Coût total sur 3 ans</td>
+<td class="border p-3"><strong>4 400€</strong></td>
+<td class="border p-3"><strong>3 500€</strong></td>
+</tr>
+<tr>
+<td class="border p-3">Après MaPrimeAdapt' (50%)</td>
+<td class="border p-3">Non applicable</td>
+<td class="border p-3"><strong>1 750€</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Où trouver un loueur de monte-escalier ?</h2>
+
+<p>La location est proposée par certains installateurs spécialisés. Que vous soyez dans les <a href='/annuaire/bouches-du-rhone-13' class='text-orange-600 hover:underline'>Bouches-du-Rhône</a> ou dans le <a href='/annuaire/nord-59' class='text-orange-600 hover:underline'>Nord</a>, contactez plusieurs professionnels pour comparer les offres.</p>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Lisez attentivement les conditions de résiliation anticipée. Certains contrats prévoient des pénalités équivalentes à plusieurs mois de loyer en cas de départ prématuré.</p></div>
+        `
+    },
+    {
+        slug: "comparatif-marques-monte-escalier",
+        title: "Comparatif Marques 2026 : Stannah vs Thyssenkrupp vs Handicare",
+        excerpt: "Quelle marque choisir ? Nous avons analysé fiabilité, garanties, SAV et prix des 3 leaders du marché. Notre verdict objectif.",
+        date: "2026-02-04",
+        author: "Équipe Rédaction",
+        image: "/images/blog/comparatif-marques-monte-escalier.png",
+        metaTitle: "Comparatif Monte-Escalier 2026 : Stannah, Thyssenkrupp, Handicare",
+        metaDescription: "Stannah, Thyssenkrupp ou Handicare ? Comparatif objectif des 3 marques : qualité, prix, garantie, SAV. Laquelle choisir en 2026 ?",
+        imagePrompt: "Three stairlift models in showroom comparison",
+        content: `
+<p>Choisir un <strong>monte-escalier</strong>, c'est aussi choisir une marque. Les trois leaders du marché français – <strong>Stannah</strong>, <strong>Thyssenkrupp</strong> et <strong>Handicare</strong> – se partagent plus de 70% des ventes. Mais lequel choisir ? Voici notre analyse comparative objective.</p>
+
+<h2>Tableau comparatif des marques</h2>
+
+<table class="w-full border-collapse my-6">
+<thead>
+<tr class="bg-slate-100">
+<th class="border p-3 text-left">Critère</th>
+<th class="border p-3 text-left">Stannah</th>
+<th class="border p-3 text-left">Thyssenkrupp</th>
+<th class="border p-3 text-left">Handicare</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-3"><strong>Origine</strong></td>
+<td class="border p-3">🇬🇧 Royaume-Uni</td>
+<td class="border p-3">🇩🇪 Allemagne</td>
+<td class="border p-3">🇳🇱 Pays-Bas</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Ancienneté</strong></td>
+<td class="border p-3">+ de 150 ans</td>
+<td class="border p-3">+ de 200 ans</td>
+<td class="border p-3">+ de 130 ans</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Prix droit</strong></td>
+<td class="border p-3">3 500€ - 5 500€</td>
+<td class="border p-3">3 000€ - 4 500€</td>
+<td class="border p-3">2 800€ - 4 200€</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Prix tournant</strong></td>
+<td class="border p-3">9 000€ - 14 000€</td>
+<td class="border p-3">8 500€ - 13 000€</td>
+<td class="border p-3">8 000€ - 12 000€</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Garantie</strong></td>
+<td class="border p-3">2 ans (ext. 5 ans)</td>
+<td class="border p-3">2 ans (ext. 5 ans)</td>
+<td class="border p-3">2 ans (ext. 3 ans)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>SAV France</strong></td>
+<td class="border p-3">⭐⭐⭐⭐⭐</td>
+<td class="border p-3">⭐⭐⭐⭐</td>
+<td class="border p-3">⭐⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Stannah : le premium britannique</h2>
+
+<h3>Points forts</h3>
+<ul>
+<li><strong>Réseau SAV le plus dense en France</strong> : interventions sous 48h dans 95% du territoire</li>
+<li>Qualité de fabrication irréprochable (certifié ISO 9001)</li>
+<li>Large gamme d'options de personnalisation</li>
+<li>Excellente réputation et ancienneté</li>
+</ul>
+
+<h3>Points faibles</h3>
+<ul>
+<li>Prix parmi les plus élevés du marché</li>
+<li>Design parfois jugé classique</li>
+</ul>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Stannah est le choix des familles qui privilégient la tranquillité d'esprit. Le surcoût à l'achat est compensé par un SAV réactif et des pièces détachées disponibles pendant 20 ans minimum.</p></div>
+
+<h2>Thyssenkrupp : l'ingénierie allemande</h2>
+
+<h3>Points forts</h3>
+<ul>
+<li><strong>Technologie HomeGlide innovante</strong> : rail ultra-compact (93mm de large)</li>
+<li>Design moderne et épuré</li>
+<li>Excellent rapport qualité/prix sur les tournants</li>
+<li>Groupe industriel solide (ascenseurs, mobilité)</li>
+</ul>
+
+<h3>Points faibles</h3>
+<ul>
+<li>Réseau de concessionnaires variable selon les régions</li>
+<li>Moins de personnalisation que Stannah</li>
+</ul>
+
+<h2>Handicare : le challenger accessible</h2>
+
+<h3>Points forts</h3>
+<ul>
+<li><strong>Meilleur rapport qualité/prix</strong> du marché</li>
+<li>Gamme complète (droit, tournant, extérieur, fauteuil roulant)</li>
+<li>Siège pivotant ergonomique très apprécié</li>
+<li>Bonnes garanties de base</li>
+</ul>
+
+<h3>Points faibles</h3>
+<ul>
+<li>Notoriété moindre en France</li>
+<li>SAV parfois moins réactif que Stannah</li>
+</ul>
+
+<div class="my-8 text-center"><a href="/devis" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Comparer les devis des 3 marques</a></div>
+
+<h2>Notre verdict par profil</h2>
+
+<ul>
+<li><strong>Budget serré :</strong> Handicare offre le meilleur rapport qualité/prix</li>
+<li><strong>SAV prioritaire :</strong> Stannah grâce à son réseau le plus dense</li>
+<li><strong>Escalier complexe :</strong> Thyssenkrupp avec sa technologie HomeGlide</li>
+<li><strong>Esthétique moderne :</strong> Thyssenkrupp ou Handicare</li>
+</ul>
+
+<p>Que vous habitiez en <a href='/annuaire/rhone-69' class='text-orange-600 hover:underline'>Rhône</a> ou en <a href='/annuaire/haute-garonne-31' class='text-orange-600 hover:underline'>Haute-Garonne</a>, demandez des devis aux trois marques pour comparer les prix réels sur votre configuration.</p>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Au-delà de la marque, c'est la qualité de l'installation et du SAV local qui compte. Un bon installateur avec une marque moyenne vaut mieux qu'un mauvais installateur avec une marque premium.</p></div>
+        `
+    },
+    {
+        slug: "monte-escalier-vs-plateforme-elevatrice",
+        title: "Monte-Escalier ou Plateforme Élévatrice : Lequel Choisir ?",
+        excerpt: "Fauteuil roulant ? Mobilité réduite ? Découvrez les différences de prix, d'usage et d'encombrement entre ces deux solutions.",
+        date: "2026-02-04",
+        author: "Équipe Rédaction",
+        image: "/images/blog/monte-escalier-vs-plateforme.png",
+        metaTitle: "Monte-Escalier vs Plateforme Élévatrice : Comparatif 2026",
+        metaDescription: "Monte-escalier ou plateforme élévatrice ? Comparatif complet : prix, encombrement, fauteuil roulant, autonomie. Guide pour bien choisir.",
+        imagePrompt: "Split image showing stairlift and platform lift",
+        content: `
+<p>Quand l'escalier devient un obstacle au quotidien, deux solutions principales s'offrent à vous : le <strong>monte-escalier</strong> (ou siège monte-escalier) et la <strong>plateforme élévatrice</strong> (ou élévateur vertical). Comment choisir entre ces deux équipements ? Voici un comparatif détaillé.</p>
+
+<h2>Différences fondamentales</h2>
+
+<h3>Le monte-escalier</h3>
+<p>Un siège motorisé qui suit le rail fixé sur les marches. L'utilisateur s'assoit, attache la ceinture et se laisse transporter le long de l'escalier.</p>
+<ul>
+<li><strong>Idéal pour :</strong> personnes avec difficultés de marche mais capables de s'asseoir/se lever</li>
+<li><strong>Contrainte :</strong> transfert du fauteuil roulant au siège nécessaire</li>
+</ul>
+
+<h3>La plateforme élévatrice</h3>
+<p>Une plateforme (avec ou sans cabine) qui monte verticalement, comme un petit ascenseur. L'utilisateur reste debout ou dans son fauteuil roulant.</p>
+<ul>
+<li><strong>Idéal pour :</strong> utilisateurs de fauteuil roulant, déambulateur, ou mobilité très réduite</li>
+<li><strong>Contrainte :</strong> nécessite de l'espace au sol et parfois des travaux</li>
+</ul>
+
+<h2>Comparatif détaillé</h2>
+
+<table class="w-full border-collapse my-6">
+<thead>
+<tr class="bg-slate-100">
+<th class="border p-3 text-left">Critère</th>
+<th class="border p-3 text-left">Monte-escalier</th>
+<th class="border p-3 text-left">Plateforme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-3"><strong>Prix</strong></td>
+<td class="border p-3">2 500€ - 14 000€</td>
+<td class="border p-3">8 000€ - 25 000€</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Fauteuil roulant</strong></td>
+<td class="border p-3">❌ Non compatible</td>
+<td class="border p-3">✅ Compatible</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Encombrement</strong></td>
+<td class="border p-3">Faible (30cm de large)</td>
+<td class="border p-3">Important (min. 1m²)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Installation</strong></td>
+<td class="border p-3">½ journée, pas de travaux</td>
+<td class="border p-3">1-2 jours, travaux possibles</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Extérieur</strong></td>
+<td class="border p-3">✅ Possible</td>
+<td class="border p-3">✅ Possible (+ cher)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Aides financières</strong></td>
+<td class="border p-3">MaPrimeAdapt', crédit impôt</td>
+<td class="border p-3">MaPrimeAdapt', crédit impôt</td>
+</tr>
+</tbody>
+</table>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">Si vous utilisez un fauteuil roulant au quotidien et prévoyez de rester dans votre logement longtemps, la plateforme élévatrice est souvent le meilleur investissement malgré son coût supérieur.</p></div>
+
+<h2>Quand choisir un monte-escalier ?</h2>
+
+<ul>
+<li>Vous pouvez vous asseoir et vous lever sans aide</li>
+<li>Vous n'utilisez pas de fauteuil roulant (ou seulement occasionnellement)</li>
+<li>Votre escalier est étroit (moins de 70cm de large)</li>
+<li>Vous avez un budget limité</li>
+<li>Vous voulez une installation rapide et sans travaux</li>
+</ul>
+
+<h2>Quand choisir une plateforme élévatrice ?</h2>
+
+<ul>
+<li>Vous utilisez un fauteuil roulant au quotidien</li>
+<li>Votre mobilité est très réduite (difficulté à s'asseoir/se lever)</li>
+<li>Vous avez suffisamment d'espace (environ 1m × 1,50m)</li>
+<li>La hauteur à franchir est faible (moins de 3m)</li>
+<li>Vous prévoyez une évolution de votre perte d'autonomie</li>
+</ul>
+
+<div class="my-8 text-center"><a href="/devis" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Obtenir des devis comparatifs gratuits</a></div>
+
+<h2>Les solutions hybrides</h2>
+
+<h3>Le monte-escalier avec plateforme</h3>
+<p>Certains modèles permettent le transport d'un fauteuil roulant léger sur une plateforme inclinée qui suit le rail. Ces équipements sont plus chers (à partir de 12 000€) mais combinent les avantages des deux solutions.</p>
+
+<h3>Le mini-ascenseur privatif</h3>
+<p>Pour les budgets plus conséquents (à partir de 15 000€), le mini-ascenseur offre le maximum de confort mais nécessite des travaux importants.</p>
+
+<p>Consultez nos installateurs en <a href='/annuaire/pas-de-calais-62' class='text-orange-600 hover:underline'>Pas-de-Calais</a> ou <a href='/annuaire/isere-38' class='text-orange-600 hover:underline'>Isère</a> pour une visite technique gratuite et un conseil personnalisé.</p>
+        `
+    },
+    {
+        slug: "entretien-monte-escalier",
+        title: "Entretien Monte-Escalier : Guide Complet et Coûts 2026",
+        excerpt: "Quand et comment entretenir votre monte-escalier ? Coût d'un contrat de maintenance, gestes quotidiens et pannes courantes.",
+        date: "2026-02-04",
+        author: "Équipe Rédaction",
+        image: "/images/blog/entretien-monte-escalier.png",
+        metaTitle: "Entretien Monte-Escalier : Conseils et Prix 2026",
+        metaDescription: "Bien entretenir son monte-escalier : gestes quotidiens, contrat de maintenance (150-300€/an), batteries, pannes courantes. Guide expert.",
+        imagePrompt: "Technician performing maintenance on stairlift",
+        content: `
+<p>Un <strong>monte-escalier bien entretenu</strong> peut durer 15 à 20 ans. Négliger la maintenance, c'est risquer des pannes coûteuses et une durée de vie réduite. Voici tout ce qu'il faut savoir sur l'entretien de votre équipement.</p>
+
+<h2>L'entretien au quotidien (par vous-même)</h2>
+
+<p>Ces gestes simples ne nécessitent aucune compétence technique :</p>
+
+<h3>Chaque semaine</h3>
+<ul>
+<li><strong>Nettoyer le siège</strong> avec un chiffon humide (pas de produit abrasif)</li>
+<li><strong>Vérifier visuellement le rail</strong> : pas de débris, poussière excessive</li>
+<li><strong>Tester la ceinture de sécurité</strong> : doit s'enclencher et se détacher facilement</li>
+</ul>
+
+<h3>Chaque mois</h3>
+<ul>
+<li><strong>Passer un chiffon sec sur le rail</strong> pour enlever la poussière</li>
+<li><strong>Vérifier le niveau de charge</strong> des batteries (voyant sur le boîtier)</li>
+<li><strong>Tester les télécommandes</strong> et boutons d'appel</li>
+</ul>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">N'utilisez JAMAIS de lubrifiant non recommandé par le fabricant. L'emploi d'huile standard peut endommager le mécanisme et annuler votre garantie.</p></div>
+
+<h2>L'entretien annuel professionnel</h2>
+
+<p>Une visite technique annuelle par un professionnel est fortement recommandée. Elle comprend généralement :</p>
+
+<ul>
+<li>Vérification complète des organes de sécurité</li>
+<li>Contrôle de l'état des batteries</li>
+<li>Lubrification du rail et des pignons</li>
+<li>Test de tous les capteurs et fins de course</li>
+<li>Ajustement des réglages si nécessaire</li>
+<li>Rapport d'intervention écrit</li>
+</ul>
+
+<h2>Coût d'un contrat de maintenance</h2>
+
+<table class="w-full border-collapse my-6">
+<thead>
+<tr class="bg-slate-100">
+<th class="border p-3 text-left">Type de contrat</th>
+<th class="border p-3 text-left">Prix/an</th>
+<th class="border p-3 text-left">Inclus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-3"><strong>Basique</strong></td>
+<td class="border p-3">100€ - 150€</td>
+<td class="border p-3">1 visite/an, main d'œuvre hors pièces</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Standard</strong></td>
+<td class="border p-3">150€ - 250€</td>
+<td class="border p-3">1-2 visites/an, pièces d'usure incluses</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Tout compris</strong></td>
+<td class="border p-3">250€ - 400€</td>
+<td class="border p-3">Visites illimitées, toutes pièces, batteries</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Contrat de maintenance : nécessaire ou pas ?</h3>
+
+<p>Un contrat est particulièrement recommandé si :</p>
+<ul>
+<li>Votre monte-escalier a plus de 5 ans</li>
+<li>Vous utilisez l'équipement plusieurs fois par jour</li>
+<li>Vous habitez loin du centre de SAV</li>
+<li>Vous souhaitez une tranquillité d'esprit totale</li>
+</ul>
+
+<div class="my-8 text-center"><a href="/devis" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Trouver un technicien pour l'entretien</a></div>
+
+<h2>Les pannes les plus courantes</h2>
+
+<h3>1. Batteries déchargées (30% des pannes)</h3>
+<p><strong>Symptômes :</strong> l'appareil s'arrête en cours de trajet ou refuse de démarrer.<br>
+<strong>Coût :</strong> 200€ à 500€ pour le remplacement.</p>
+
+<h3>2. Problème de capteurs (25% des pannes)</h3>
+<p><strong>Symptômes :</strong> arrêts intempestifs, messages d'erreur.<br>
+<strong>Coût :</strong> 100€ à 300€ selon le capteur.</p>
+
+<h3>3. Usure du rail (15% des pannes)</h3>
+<p><strong>Symptômes :</strong> bruits anormaux, à-coups pendant le trajet.<br>
+<strong>Coût :</strong> variable selon la zone à remplacer.</p>
+
+<h3>4. Télécommande défectueuse (10% des pannes)</h3>
+<p><strong>Symptômes :</strong> l'appareil ne répond pas à la télécommande mais fonctionne avec les boutons du siège.<br>
+<strong>Coût :</strong> 50€ à 150€ pour une nouvelle télécommande.</p>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8"><h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4><p class="text-blue-800">En cas de panne, ne tentez JAMAIS de réparer vous-même. Les monte-escaliers contiennent des éléments sous tension. Faites appel à un technicien agréé.</p></div>
+
+<h2>Prolonger la durée de vie de votre équipement</h2>
+
+<ul>
+<li><strong>Rangez toujours le siège</strong> en position de charge (en haut ou en bas selon le modèle)</li>
+<li><strong>Évitez les surcharges</strong> : respectez le poids maximum indiqué</li>
+<li><strong>Protégez le rail</strong> des projections d'eau si monte-escalier intérieur</li>
+<li><strong>Signalez rapidement</strong> tout bruit ou comportement anormal</li>
+</ul>
+
+<p>Pour trouver un technicien qualifié en <a href='/annuaire/var-83' class='text-orange-600 hover:underline'>Var</a> ou <a href='/annuaire/moselle-57' class='text-orange-600 hover:underline'>Moselle</a>, utilisez notre annuaire de professionnels agréés.</p>
+        `
+    },
+    {
         slug: "devis-monte-escalier-pieges",
         title: "Devis Monte-Escalier : 7 Pièges à Éviter Avant de Signer en 2026",
         excerpt: "Ne signez pas votre devis les yeux fermés ! Découvrez les 7 pièges courants et nos conseils d'expert pour choisir le bon installateur.",
