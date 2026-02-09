@@ -14,6 +14,76 @@ export interface GuideArticle {
 
 export const GUIDES: GuideArticle[] = [
     {
+        slug: "monte-escalier-occasion-bonne-affaire",
+        title: "Monte-Escalier Occasion : Bonne Affaire ou Piège ? (Guide 2026)",
+        excerpt: "Économisez jusqu'à 50% sur votre installation ? Attention aux coûts cachés ! Prix réels, garanties indispensables et pièges à éviter pour un achat serein.",
+        date: "2026-02-09",
+        author: "Équipe Rédaction",
+        image: "/images/blog/monte-escalier-occasion-bonne-affaire.png",
+        metaTitle: "Monte-Escalier Occasion : Prix, Risques & Conseils (Guide 2026)",
+        metaDescription: "Faut-il acheter d'occasion ? Prix (2500€-7000€), installation, garanties. Notre guide expert pour éviter les pièges et trouver une vraie bonne affaire.",
+        imagePrompt: "A reassuring photo of a senior couple discussing with a smiling technician next to a modern stairlift in a bright French home. Close-up on the high-quality equipment. Photorealistic, 8k, warm lighting.",
+        content: `
+    <p>Face au coût parfois élevé d'un équipement neuf, le marché du <strong>monte-escalier d'occasion</strong> (ou reconditionné) attire de plus en plus de seniors. La promesse ? Une économie de 30% à 50% pour un confort identique. Mais attention : sans les bonnes vérifications, la "bonne affaire" peut vite se transformer en gouffre financier.</p>
+    <p>Installation sur-mesure, état des batteries, garantie... Voici notre guide complet pour acheter un fauteuil élévateur de seconde main sans risques en 2026.</p>
+
+    <h2>Combien Coûte un Monte-Escalier d'Occasion en 2026 ?</h2>
+    <p>Le prix dépend essentiellement de l'état de l'appareil (reconditionné par un pro ou vendu par un particulier) et de la configuration de votre escalier. Voici les fourchettes réalistes :</p>
+
+    <ul>
+        <li><strong>Monte-escalier droit reconditionné :</strong> Entre <strong>1 800€ et 3 000€</strong> (pose comprise). C'est le cas le plus favorable car le rail est standard.</li>
+        <li><strong>Monte-escalier tournant reconditionné :</strong> Entre <strong>4 000€ et 7 000€</strong>. Attention : le rail doit souvent être refait à neuf pour s'adapter à VOS virages, ce qui limite l'économie réalisée.</li>
+        <li><strong>Vente entre particuliers :</strong> De 500€ à 1 500€ (hors pose). <strong>Déconseillé</strong> car vous devrez payer le démontage, le transport et la réinstallation par un expert (coût total souvent supérieur au neuf aidé).</li>
+    </ul>
+
+    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+        <h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4>
+        <p class="text-blue-800">
+            Ne regardez pas uniquement le prix d'achat. Un modèle d'occasion n'est souvent PAS éligible aux aides de l'Anah (MaPrimeAdapt'). Parfois, un <strong>monte-escalier neuf subventionné à 70%</strong> revient MOINS CHER qu'un modèle d'occasion payé plein pot !
+        </p>
+    </div>
+
+    <h2>Les 3 Risques Majeurs du Monte-Escalier d'Occasion</h2>
+    <p>Avant de signer, soyez vigilant sur ces points critiques qui concernent votre sécurité et votre tranquillité d'esprit :</p>
+
+    <h3>1. L'adaptation du rail (Le point critique)</h3>
+    <p>Un rail de monte-escalier est comme une empreinte digitale : il est conçu pour UN seul escalier. Si vous achetez un modèle tournant d'occasion, le rail ne s'adaptera jamais parfaitement chez vous. Un professionnel devra fabriquer un nouveau rail, ce qui représente 70% du coût du matériel.</p>
+
+    <h3>2. L'état des batteries</h3>
+    <p>Ce sont les pièces d'usure n°1. Des batteries fatiguées peuvent vous laisser bloqué au milieu de l'escalier. Exigez des batteries NEUVES lors de l'achat (coût de remplacement : environ 300€).</p>
+
+    <h3>3. La garantie et le SAV</h3>
+    <p>En achetant à un particulier, vous n'avez aucune garantie. En passant par un professionnel, exigez une <strong>garantie pièces et main d'œuvre d'au moins 12 mois</strong>. La présence d'un technicien réactif est indispensable.</p>
+
+    <div class="my-8 text-center">
+        <a href="#top" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">
+            Comparer les devis (Neuf vs Occasion) gratuitement
+        </a>
+    </div>
+
+    <h2>Où Trouver un Installateur de Confiance ?</h2>
+    <p>Pour un achat sécurisé, privilégiez les revendeurs agréés qui proposent des modèles reconditionnés en usine (Stannah, Thyssenkrupp, Handicare...). Ils vérifient plus de 30 points de contrôle avant la remise en vente.</p>
+    <p>Que vous habitiez en <a href='/annuaire/nord-59' class='text-orange-600 hover:underline'>Nord</a> avec ses maisons à étages typiques, ou en région <a href='/annuaire/rhone-69' class='text-orange-600 hover:underline'>Rhône</a>, des installateurs locaux peuvent vous proposer des stocks d'occasion garantis.</p>
+
+    <h2>Occasion vs Neuf : Le Verdict 2026</h2>
+    <p><strong>Choisissez l'occasion si :</strong></p>
+    <ul>
+        <li>Vous avez un <strong>escalier droit</strong> standard.</li>
+        <li>Vous avez besoin d'une installation urgente (stock souvent disponible).</li>
+        <li>Vous n'êtes pas éligible aux aides financières.</li>
+    </ul>
+
+    <p><strong>Préferez le neuf si :</strong></p>
+    <ul>
+        <li>Vous avez un <strong>escalier tournant</strong> ou complexe.</li>
+        <li>Vous êtes éligible à <strong>MaPrimeAdapt'</strong> (jusqu'à 70% de prise en charge).</li>
+        <li>Vous voulez choisir le design et les options (rail relevable, siège pivotant...).</li>
+    </ul>
+
+    <p>Pour faire le bon choix, l'idéal est de comparer. Demandez à recevoir des devis pour du neuf ET de l'occasion afin de chiffrer précisément votre reste à charge.</p>
+        `
+    },
+    {
         slug: "monte-escalier-occasion",
         title: "Monte-Escalier d'Occasion : Bonne ou Mauvaise Idée ? Guide 2026",
         excerpt: "Économisez 30 à 50% avec un monte-escalier reconditionné. Mais attention aux pièges ! Voici les vérifications essentielles avant d'acheter.",
