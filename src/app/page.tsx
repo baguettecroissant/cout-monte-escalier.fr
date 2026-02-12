@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Shield, Star, MapPin, Euro, Clock, HeartHandshake, BookOpen, Truck, Award } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getAllGuides } from "@/data/guides-content";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.cout-monte-escalier.fr',
+  },
+};
 
 export default function Home() {
   return (

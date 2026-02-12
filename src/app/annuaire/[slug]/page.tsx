@@ -31,6 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: `Prix Monte-Escalier ${dept.name} (${dept.code}) - Installateurs & Devis`,
         description: `Trouvez un installateur de monte-escalier agrée dans le ${dept.name} (${dept.code}). Devis comparatifs gratuits, aides locales (${dept.aide_locale}) et prix moyens.`,
+        alternates: {
+            canonical: `https://www.cout-monte-escalier.fr/annuaire/${slug}`,
+        },
     };
 }
 

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 export const dynamic = 'force-static';
 
-const BASE_URL = 'https://cout-monte-escalier.fr';
+const BASE_URL = 'https://www.cout-monte-escalier.fr';
 
 export async function generateStaticParams() {
     const departmentCodes = getAllDepartmentCodes();

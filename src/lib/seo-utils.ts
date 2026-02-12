@@ -24,6 +24,9 @@ export function generateCityMetadata(city: City) {
     return {
         title: `Prix Monte-Escalier ${city.name} (${city.zip}) - Devis & Installation`,
         description: `Quel est le prix d'un monte-escalier à ${city.name} ? Comparez les tarifs des installateurs du département ${city.department_name} et obtenez votre devis gratuit.`,
+        alternates: {
+            canonical: `https://www.cout-monte-escalier.fr/prix-monte-escalier/${city.slug}`,
+        },
     };
 }
 

@@ -15,6 +15,13 @@ type Props = {
     params: Promise<{ slug: string }>;
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { slug } = await params;
+    const city = getCityFromSlug(slug);
+    if (!city) return {};
+    return generateCityMetadata(city);
+}
+
 // ... existing imports
 
 export default async function CityPage({ params }: Props) {

@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
         title: brand.seoTitle,
         description: brand.seoDescription,
+        alternates: {
+            canonical: `https://www.cout-monte-escalier.fr/marques/${slug}`,
+        },
         openGraph: {
             title: brand.seoTitle,
             description: brand.seoDescription,

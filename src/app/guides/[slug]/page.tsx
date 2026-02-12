@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: PageProps) {
     return {
         title: guide.metaTitle,
         description: guide.metaDescription,
+        alternates: {
+            canonical: `https://www.cout-monte-escalier.fr/guides/${slug}`,
+        },
     };
 }
 

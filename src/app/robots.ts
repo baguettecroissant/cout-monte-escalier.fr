@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllCitySlugs } from '@/lib/seo-utils';
 
-const BASE_URL = 'https://cout-monte-escalier.fr';
+const BASE_URL = 'https://www.cout-monte-escalier.fr';
 const ITEMS_PER_SITEMAP = 5000;
 
 export default function robots(): MetadataRoute.Robots {

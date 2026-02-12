@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cout-monte-escalier.fr'),
+  metadataBase: new URL('https://www.cout-monte-escalier.fr'),
   title: "Prix Monte Escalier 2026 - Devis Gratuit & Comparatif",
   description: "Obtenez le prix exact de votre monte-escalier. Comparez 3 devis d'installateurs certifiés (Stannah, Thyssenkrupp, etc.) près de chez vous.",
   openGraph: {
