@@ -3,7 +3,7 @@ import { getAllDepartmentCodes } from '@/lib/seo-utils';
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
-    const baseUrl = 'https://cout-monte-escalier.fr';
+    const baseUrl = 'https://www.cout-monte-escalier.fr';
     const departmentCodes = getAllDepartmentCodes();
 
     const sitemaps = [

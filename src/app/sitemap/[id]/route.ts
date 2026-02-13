@@ -32,6 +32,9 @@ export async function GET(
     let urls: { url: string; lastModified: Date; changeFrequency: string; priority: number }[] = [];
 
     if (sitemapId === 'main') {
+        // Use a realistic fixed date for static pages (last major site update)
+        const siteLastUpdated = new Date('2026-02-13');
+
         const staticPages = [
             { path: '', priority: 1, frequency: 'daily' },
             { path: '/annuaire', priority: 0.9, frequency: 'weekly' },
@@ -50,12 +53,12 @@ export async function GET(
         // Core static pages
         urls = staticPages.map(p => ({
             url: `${BASE_URL}${p.path}`,
-            lastModified: new Date(),
+            lastModified: siteLastUpdated,
             changeFrequency: p.frequency,
             priority: p.priority,
         }));
 
-        // Dynamic Guides
+        // Dynamic Guides - use actual publication date
         GUIDES.forEach(guide => {
             urls.push({
                 url: `${BASE_URL}/guides/${guide.slug}`,
@@ -69,7 +72,7 @@ export async function GET(
         BRANDS.forEach(brand => {
             urls.push({
                 url: `${BASE_URL}/marques/${brand.slug}`,
-                lastModified: new Date(),
+                lastModified: siteLastUpdated,
                 changeFrequency: 'monthly',
                 priority: 0.7,
             });
@@ -77,13 +80,10 @@ export async function GET(
 
         // Department landing pages
         departmentsData.forEach(dept => {
-            // Slug is usually "nom-code" but let's check existing logic or use code
-            // Based on previous work, slugs are like "paris-75" or "ain-01"
-            // Let's normalize name for slug
             const slug = `${dept.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '-')}-${dept.code}`;
             urls.push({
                 url: `${BASE_URL}/annuaire/${slug}`,
-                lastModified: new Date(),
+                lastModified: siteLastUpdated,
                 changeFrequency: 'weekly',
                 priority: 0.8,
             });
@@ -95,11 +95,12 @@ export async function GET(
             return notFound();
         }
 
+        const cityLastUpdated = new Date('2026-02-13');
         urls = departmentCities.map((city) => ({
             url: `${BASE_URL}/prix-monte-escalier/${city.slug}`,
-            lastModified: new Date(),
+            lastModified: cityLastUpdated,
             changeFrequency: 'weekly',
-            priority: 0.6, // Reduced city priority relative to depts/guides
+            priority: 0.6,
         }));
     }
 

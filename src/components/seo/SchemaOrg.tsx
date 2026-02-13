@@ -7,23 +7,29 @@ interface SchemaOrgProps {
 export function SchemaOrg({ city }: SchemaOrgProps) {
     const schema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": `Installateur Monte-Escalier ${city.name}`,
-        "image": "https://cout-monte-escalier.fr/images/monte-escalier-senior.jpg",
-        "telephone": "0123456789",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": city.name,
-            "postalCode": city.zip,
-            "addressCountry": "FR"
+        "@type": "Service",
+        "name": `Installation Monte-Escalier à ${city.name}`,
+        "description": `Service d'installation et de maintenance de monte-escalier à ${city.name} (${city.zip}). Devis gratuits d'artisans certifiés RGE.`,
+        "areaServed": {
+            "@type": "City",
+            "name": city.name,
+            "address": {
+                "@type": "PostalAddress",
+                "postalCode": city.zip,
+                "addressCountry": "FR"
+            }
         },
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": city.coordinates.lat,
             "longitude": city.coordinates.lng
         },
-        "url": `https://cout-monte-escalier.fr/prix-monte-escalier/${city.slug}-${city.zip}`,
-        "priceRange": "€€€"
+        "url": `https://www.cout-monte-escalier.fr/prix-monte-escalier/${city.slug}-${city.zip}`,
+        "provider": {
+            "@type": "Organization",
+            "name": "Cout-Monte-Escalier.fr",
+            "url": "https://www.cout-monte-escalier.fr"
+        }
     };
 
     return (

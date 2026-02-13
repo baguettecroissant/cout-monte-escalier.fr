@@ -9,6 +9,7 @@ import { NearbyCitiesModule } from "@/components/psea/NearbyCitiesModule";
 import { Metadata } from "next";
 import { LocalAidsModule } from "@/components/psea/LocalAidsModule";
 import { StepsModule } from "@/components/psea/StepsModule";
+import { GuidesWidget } from "@/components/seo/GuidesWidget";
 
 // Next.js 15 params
 type Props = {
@@ -38,6 +39,49 @@ export default async function CityPage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             <SchemaOrg city={city} />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": `Quel est le prix moyen d'un monte-escalier à ${city.name} ?`,
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": `Le prix dépend de la configuration de votre escalier. À ${city.name}, pour un escalier droit, comptez entre 2 500 € et 5 000 €. Pour un tournant, le budget se situe généralement entre 6 000 € et 10 000 €, pose incluse.`
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": `Existe-t-il des aides à ${city.name} (${city.department_code}) ?`,
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": `Oui, vous pouvez prétendre à MaPrimeAdapt' (jusqu'à 70% de prise en charge) ou au crédit d'impôt. Le département ${city.department_name} peut également proposer des allocations comme l'APA.`
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Combien de temps pour l'installation ?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Comptez 2 à 3 semaines de fabrication pour un monte-escalier droit, et 4 à 6 semaines pour un courbe sur-mesure. La pose elle-même ne dure qu'une demi-journée."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": `Où trouver un réparateur de monte-escalier à ${city.name} ?`,
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": `Nos partenaires installateurs assurent également le SAV et l'entretien annuel obligatoire. En passant par notre comparateur, vous êtes mis en relation avec des professionnels locaux qui garantissent un dépannage rapide dans le ${city.department_code}.`
+                                }
+                            }
+                        ]
+                    })
+                }}
+            />
 
             <div className="bg-slate-50 pt-4 pb-0">
                 <div className="container mx-auto px-4 max-w-4xl">
@@ -87,6 +131,8 @@ export default async function CityPage({ params }: Props) {
                 </section>
 
                 <LocalAidsModule city={city} />
+
+                <GuidesWidget />
 
                 {/* FAQ Section */}
                 <section className="mb-16 mt-16">

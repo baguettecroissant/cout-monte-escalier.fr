@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Prix Monte Escalier 2026 - Devis Gratuit & Comparatif",
     description: "Obtenez le prix exact de votre monte-escalier. Comparez 3 devis d'installateurs certifiés.",
-    url: 'https://cout-monte-escalier.fr',
+    url: 'https://www.cout-monte-escalier.fr',
     siteName: 'Cout-Monte-Escalier.fr',
     locale: 'fr_FR',
     type: 'website',
@@ -35,17 +35,26 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Cout-Monte-Escalier.fr",
-  "url": "https://cout-monte-escalier.fr",
-  "logo": "https://cout-monte-escalier.fr/icon.png",
-  "sameAs": [
-    "https://twitter.com/coutmonteescalier"
-  ],
+  "url": "https://www.cout-monte-escalier.fr",
+  "logo": "https://www.cout-monte-escalier.fr/icon.png",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+33-1-00-00-00-00",
     "contactType": "customer service",
     "areaServed": "FR",
     "availableLanguage": "French"
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Cout-Monte-Escalier.fr",
+  "url": "https://www.cout-monte-escalier.fr",
+  "description": "Comparateur de prix et guide d'achat pour monte-escalier en France. Devis gratuits d'installateurs certifiés RGE.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.cout-monte-escalier.fr/annuaire?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
 };
 
@@ -67,6 +76,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <Header />
         <main className="flex-1">{children}</main>

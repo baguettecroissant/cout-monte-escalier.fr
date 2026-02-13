@@ -7,6 +7,7 @@ import { ViteUnDevisWidget } from "@/components/affiliation/ViteUnDevisWidget";
 import { Calendar, User, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { RelatedGuides } from "@/components/seo/RelatedGuides";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -28,6 +29,22 @@ export async function generateMetadata({ params }: PageProps) {
         alternates: {
             canonical: `https://www.cout-monte-escalier.fr/guides/${slug}`,
         },
+        openGraph: {
+            title: guide.metaTitle,
+            description: guide.metaDescription,
+            url: `https://www.cout-monte-escalier.fr/guides/${slug}`,
+            siteName: "Cout-Monte-Escalier.fr",
+            locale: "fr_FR",
+            type: "article",
+            publishedTime: guide.date,
+            authors: [guide.author],
+            ...(guide.image && { images: [{ url: `https://www.cout-monte-escalier.fr${guide.image}`, width: 1200, height: 630, alt: guide.title }] }),
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: guide.metaTitle,
+            description: guide.metaDescription,
+        },
     };
 }
 
@@ -46,8 +63,43 @@ export default async function GuidePost({ params }: PageProps) {
         notFound();
     }
 
+    // Article JSON-LD schema
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": guide.title,
+        "description": guide.metaDescription,
+        "datePublished": guide.date,
+        "dateModified": guide.date,
+        "author": {
+            "@type": "Person",
+            "name": guide.author,
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cout-Monte-Escalier.fr",
+            "url": "https://www.cout-monte-escalier.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.cout-monte-escalier.fr/icon.png",
+            },
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://www.cout-monte-escalier.fr/guides/${slug}`,
+        },
+        ...(guide.image && {
+            "image": `https://www.cout-monte-escalier.fr${guide.image}`,
+        }),
+    };
+
     return (
         <div className="bg-white min-h-screen pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+
             {/* Header / Breadcrumb */}
             <div className="bg-slate-50 border-b border-slate-200 py-8">
                 <div className="container mx-auto px-4">
@@ -84,7 +136,9 @@ export default async function GuidePost({ params }: PageProps) {
                                 src={guide.image}
                                 alt={guide.title}
                                 fill
+                                sizes="(max-width: 768px) 100vw, 66vw"
                                 className="object-cover"
+                                priority
                             />
                         </div>
                     )}
@@ -106,6 +160,9 @@ export default async function GuidePost({ params }: PageProps) {
                             </Button>
                         </Link>
                     </div>
+
+                    {/* Related Guides (inter-linking) */}
+                    <RelatedGuides currentSlug={slug} />
                 </article>
 
                 {/* Sidebar */}

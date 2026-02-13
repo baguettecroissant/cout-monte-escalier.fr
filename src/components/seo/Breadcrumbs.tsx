@@ -27,7 +27,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
             "@type": "ListItem",
             "position": index + 1,
             "name": item.label,
-            "item": item.href ? `https://cout-monte-escalier.fr${item.href}` : undefined,
+            "item": item.href ? `https://www.cout-monte-escalier.fr${item.href}` : undefined,
         })),
     };
 

@@ -1,23 +1,38 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getAllGuides } from "@/data/guides-content";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 
-export const metadata = {
-    title: "Guides & Conseils Monte-Escalier | Cout-Monte-Escalier.fr",
-    description: "Nos dossiers complets pour bien choisir votre monte-escalier : prix, aides financières, modèles et installation.",
+type Props = {
+    searchParams: Promise<{ page?: string }>;
 };
 
-export default function GuidesPage({
-    searchParams,
-}: {
-    searchParams: { page?: string };
-}) {
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+    const { page } = await searchParams;
+    const currentPage = Number(page) || 1;
+
+    return {
+        title: currentPage > 1
+            ? `Guides & Conseils Monte-Escalier - Page ${currentPage} | Cout-Monte-Escalier.fr`
+            : "Guides & Conseils Monte-Escalier | Cout-Monte-Escalier.fr",
+        description: "Nos dossiers complets pour bien choisir votre monte-escalier : prix, aides financières, modèles et installation.",
+        alternates: {
+            canonical: currentPage > 1
+                ? `https://www.cout-monte-escalier.fr/guides?page=${currentPage}`
+                : "https://www.cout-monte-escalier.fr/guides",
+        },
+    };
+}
+
+export default async function GuidesPage({ searchParams }: Props) {
+    const { page } = await searchParams;
     const allGuides = getAllGuides().sort((a, b) => {
         return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
 
-    const currentPage = Number(searchParams.page) || 1;
+    const currentPage = Number(page) || 1;
     const itemsPerPage = 12;
     const totalPages = Math.ceil(allGuides.length / itemsPerPage);
 
@@ -27,6 +42,8 @@ export default function GuidesPage({
 
     return (
         <div className="container mx-auto px-4 py-16">
+            <Breadcrumbs items={[{ label: "Guides" }]} />
+
             <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Guides & Conseils</h1>
             <p className="text-xl text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                 Retrouvez toutes les informations indispensables pour réussir votre projet d'installation.
@@ -41,6 +58,7 @@ export default function GuidesPage({
                                     src={guide.image}
                                     alt={guide.title}
                                     fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     className="object-cover rounded-t-xl"
                                 />
                             </div>
@@ -57,7 +75,7 @@ export default function GuidesPage({
                                     {new Date(guide.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
                                 </span>
                                 <Link href={`/guides/${guide.slug}`} className="text-orange-600 font-medium hover:underline">
-                                    Lire l'article &rarr;
+                                    Lire l&apos;article &rarr;
                                 </Link>
                             </div>
                         </CardContent>
