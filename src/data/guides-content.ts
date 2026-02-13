@@ -1548,6 +1548,100 @@ En cas de <strong>perte d'autonomie</strong> soudaine (chute, AVC, retour d'hosp
 
 <p>N'hésitez pas à demander plusieurs devis pour comparer. Un installateur en <a href='/annuaire/gironde-33' class='text-orange-600 hover:underline'>Gironde</a> n'aura pas les mêmes tarifs qu'en <a href='/annuaire/hauts-de-seine-92' class='text-orange-600 hover:underline'>Hauts-de-Seine</a>. La concurrence est votre meilleure alliée pour faire baisser les prix.</p>
         `
+    },
+    {
+        slug: "cout-entretien-monte-escalier-contrat-ou-demande",
+        title: "Coût Entretien Monte-Escalier 2026 : Contrat ou à la Demande ?",
+        excerpt: "Combien coûte l'entretien d'un monte-escalier en 2026 ? Contrat annuel ou intervention à la demande : avantages, prix et pièges à éviter. Le comparatif expert.",
+        date: "2026-02-13",
+        author: "Équipe Rédaction",
+        image: "/images/blog/cout-entretien-monte-escalier.jpg",
+        metaTitle: "Coût Entretien Monte-Escalier 2026 : Prix & Contrat",
+        metaDescription: "Prix entretien monte-escalier 2026 : 150€ à 450€/an. Faut-il choisir un contrat de maintenance ou payer à la demande ? Comparatif, tarifs et conseils.",
+        imagePrompt: "Close-up of a stairlift maintenance checklist and tools on a wooden table, with blurred background of a modern living room and a stairlift rail. Professional, bright, photorealistic, 8k resolution.",
+        content: `
+<h2>Pourquoi l'Entretien est-il Indispensable en 2026 ?</h2>
+<p>Un <strong>monte-escalier</strong> représente un investissement conséquent, souvent entre <strong>3 000€ et 8 000€</strong> pour un modèle tournant sur-mesure. Pour amortir cet achat sur 15 ou 20 ans, un entretien rigoureux est non-négociable. Au-delà de la pérennité de l'équipement, c'est votre sécurité qui est en jeu : plus de <strong>30% des pannes</strong> (batterie déchargée, capteur défaillant, arrêt brutal) surviennent par manque de maintenance préventive.</p>
+<p>Mais pour assurer cette tranquillité d'esprit, faut-il signer un <strong>contrat d'entretien annuel</strong> ou payer le technicien à chaque visite ? Voici les chiffres réels du marché en 2026 pour vous aider à décider.</p>
+
+<h2>Option 1 : Le Contrat de Maintenance Annuel (La Sérénité)</h2>
+<p>C'est la formule privilégiée par 70% des utilisateurs de <strong>fauteuil élévateur</strong>. Vous payez un forfait annuel qui inclut une visite de contrôle et, selon la formule choisie, les pièces et la main d'œuvre pour les dépannages.</p>
+
+<h3>Les Tarifs 2026 des Contrats</h3>
+<ul>
+<li><strong>Contrat Standard (150€ à 250€ / an) :</strong> Inclut la visite annuelle obligatoire de maintenance préventive, le déplacement et la main d'œuvre pour cette visite. Les pièces détachées restent souvent à votre charge.</li>
+<li><strong>Contrat "Tout Inclus" (280€ à 450€ / an) :</strong> La formule premium. Elle couvre la visite annuelle, les dépannages illimités, les pièces détachées (parfois même les batteries) et la main d'œuvre en cas de panne.</li>
+</ul>
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+<h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4>
+<p class="text-blue-800">
+Relisez bien les exclusions de garantie avant de signer ! Souvent, les <strong>batteries</strong> (dont le coût varie de 150€ à 300€ tous les 3-5 ans) ne sont pas incluses dans les contrats standard. Négociez leur inclusion dans une formule intermédiaire si possible pour éviter les mauvaises surprises.
+</p>
+</div>
+
+<h2>Option 2 : L'Entretien "À la Demande" (La Flexibilité)</h2>
+<p>Vous ne payez que lorsque vous appelez le technicien. C'est un pari : économique si tout va bien, mais qui peut s'avérer très coûteux en cas de panne majeure ou répétée.</p>
+
+<h3>Les Coûts Ponctuels Moyens</h3>
+<ul>
+<li><strong>Coût d'une visite de contrôle :</strong> 100€ à 150€ (déplacement inclus).</li>
+<li><strong>Coût d'un dépannage standard :</strong> 150€ à 300€ (selon la pièce et l'urgence).</li>
+<li><strong>Frais de déplacement :</strong> 40€ à 80€ (souvent offerts dans les contrats, mais facturés ici à chaque passage).</li>
+</ul>
+
+<p>Attention à la géographie : si vous habitez dans une zone rurale ou isolée, comme dans la <a href='/annuaire/creuse-23' class='text-orange-600 hover:underline'>Creuse</a> ou en <a href='/annuaire/correze-19' class='text-orange-600 hover:underline'>Corrèze</a>, les frais kilométriques peuvent vite faire grimper la facture d'une intervention ponctuelle.</p>
+
+<h2>Tableau Comparatif : Que Choisir ?</h2>
+
+<p>Pour visualiser rapidement l'option la plus rentable selon votre profil :</p>
+
+<table class="w-full border-collapse my-6">
+<thead>
+<tr class="bg-slate-100">
+<th class="border p-3 text-left">Critère</th>
+<th class="border p-3 text-left">Contrat de Maintenance</th>
+<th class="border p-3 text-left">À la Demande</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-3"><strong>Coût Annuel Moyen</strong></td>
+<td class="border p-3">200€ (fixe)</td>
+<td class="border p-3">0€ à 400€ (variable)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Priorité Dépannage</strong></td>
+<td class="border p-3">OUI (24h/48h garantis)</td>
+<td class="border p-3">NON (selon dispo)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Pièces Détachées</strong></td>
+<td class="border p-3">Souvent incluses (selon offre)</td>
+<td class="border p-3">Toujours payantes (plein tarif)</td>
+</tr>
+<tr>
+<td class="border p-3"><strong>Tranquillité d'esprit</strong></td>
+<td class="border p-3">⭐⭐⭐⭐⭐</td>
+<td class="border p-3">⭐⭐</td>
+</tr>
+</tbody>
+</table>
+
+<div class="my-8 text-center"><a href="#top" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">Comparer les devis gratuitement</a></div>
+
+<h2>Existe-t-il des Aides pour l'Entretien ?</h2>
+<p>Contrairement à l'installation neuve (éligible à MaPrimeAdapt' et au crédit d'impôt de 25%), l'entretien ne bénéficie pas d'aides directes massives de l'État. Cependant, deux dispositifs existent :</p>
+<ul>
+<li><strong>TVA Réduite (10%) :</strong> Si votre logement a plus de 2 ans, la TVA appliquée sur l'entretien et les réparations est de 10% (au lieu de 20%).</li>
+<li><strong>Aide des Caisses de Retraite :</strong> Certaines caisses complémentaires (Agirc-Arrco, IRCANTEC) peuvent participer aux frais de maintenance ou de réparation sur dossier social, dans le cadre de l'aide au maintien à domicile.</li>
+</ul>
+
+<h2>Conclusion : L'Avis de l'Expert</h2>
+<p>Pour un monte-escalier neuf (sous garantie pièce 2 ans), l'entretien à la demande peut suffire les premières années. Passé 5 ans, ou pour un appareil reconditionné, le <strong>contrat de maintenance</strong> devient vite indispensable pour éviter les factures imprévues qui peuvent dépasser 500€ en une seule intervention.</p>
+
+<p>Besoin d'un technicien qualifié pour un devis maintenance ? Que vous soyez dans le <a href='/annuaire/calvados-14' class='text-orange-600 hover:underline'>Calvados</a> ou en <a href='/annuaire/indre-et-loire-37' class='text-orange-600 hover:underline'>Indre-et-Loire</a>, utilisez notre annuaire pour trouver un expert certifié proche de chez vous.</p>
+        `
     }
 ];
 
