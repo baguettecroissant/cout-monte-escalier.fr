@@ -1686,7 +1686,7 @@ Relisez bien les exclusions de garantie avant de signer ! Souvent, les <strong>b
     <p>C'est ici que se joue la différence. Certaines régions ou départements abondent les aides nationales. Que vous habitiez en <a href='/annuaire/nord-59' class='text-orange-600 hover:underline'>Nord</a> ou en <a href='/annuaire/rhone-69' class='text-orange-600 hover:underline'>Rhône</a>, des subventions complémentaires (PCH, APA) peuvent venir couvrir le reste à charge.</p>
 
     <div class="my-8 text-center">
-        <a href="#top" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">
+        <a href="#top" class="inline-block bg-orange-600 !text-white !no-underline font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg">
             Simuler mes Aides et Comparer les Prix
         </a>
     </div>
