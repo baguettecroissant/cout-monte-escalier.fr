@@ -1782,7 +1782,7 @@ Relisez bien les exclusions de garantie avant de signer ! Souvent, les <strong>b
     <p>C'est pourquoi il est essentiel de comparer plusieurs devis. Que vous habitiez à <a href='/annuaire/bordeaux-33' class='text-orange-600 hover:underline'>Bordeaux</a> (Gironde) où les immeubles anciens à escaliers courbes sont légion, ou à <a href='/annuaire/nice-06' class='text-orange-600 hover:underline'>Nice</a> (Alpes-Maritimes), les contraintes architecturales varient énormément.</p>
 
     <div class="my-10 text-center">
-    <a href="#top" class="inline-block bg-orange-600 text-white font-bold py-4 px-10 rounded-full hover:bg-orange-700 transition-all transform hover:scale-105 shadow-xl text-lg">
+    <a href="#top" class="inline-block bg-orange-600 !text-white text-white font-bold py-4 px-10 rounded-full hover:bg-orange-700 transition-all transform hover:scale-105 shadow-xl text-lg !no-underline">
     Obtenir 3 devis comparatifs gratuits pour mon escalier
     </a>
     <p class="text-sm text-gray-500 mt-2">Sans engagement - Réponse sous 48h</p>

@@ -8,6 +8,7 @@ import { Calendar, User, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { RelatedGuides } from "@/components/seo/RelatedGuides";
+import { StickyMobileCTA } from "@/components/psea/StickyMobileCTA";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -94,7 +95,7 @@ export default async function GuidePost({ params }: PageProps) {
     };
 
     return (
-        <div className="bg-white min-h-screen pb-20">
+        <div className="bg-white min-h-screen pb-32">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -182,6 +183,7 @@ export default async function GuidePost({ params }: PageProps) {
                     </div>
                 </aside>
             </div>
+            <StickyMobileCTA />
         </div>
     );
 }
