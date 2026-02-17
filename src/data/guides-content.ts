@@ -14,6 +14,151 @@ export interface GuideArticle {
 
 export const GUIDES: GuideArticle[] = [
     {
+        slug: "location-monte-escalier-court-terme",
+        title: "Location de Monte-Escalier Courte Durée : Prix & Guide 2026",
+        excerpt: "Besoin d'un monte-escalier pour 6 à 18 mois ? La location est une solution flexible dès 90€/mois. Tarifs complets, comparatif Achat vs Location et pièges à éviter.",
+        date: "2026-02-17",
+        author: "Équipe Rédaction",
+        image: "/images/blog/location-monte-escalier-court-terme.png",
+        metaTitle: "Location Monte-Escalier : Prix 2026, Comparatif et Aides",
+        metaDescription: "Guide complet 2026 sur la location de monte-escalier. Prix (dès 90€/mois), frais cachés, contrat et comparatif achat/location. Faites le bon choix.",
+        imagePrompt: "A modern stairlift installation in a bright home interior, focusing on temporary setup without damage. A senior person discussing rental terms with a friendly consultant holding a tablet. Focus on flexibility and ease. Photorealistic, 8k, warm lighting.",
+        content: `
+    <h2>Pourquoi Choisir la Location de Monte-Escalier Courte Durée ?</h2>
+    <p>Face à une perte d'autonomie temporaire, l'achat d'un <strong>monte-escalier</strong> neuf à plusieurs milliers d'euros peut sembler disproportionné. La <strong>location</strong> apparaît alors comme une alternative séduisante, offrant flexibilité et maîtrise du budget.</p>
+    <p>En 2026, cette solution séduit de plus en plus de foyers français, notamment pour répondre à des besoins urgents sans engagement sur le long terme.</p>
+
+    <h3>Les 4 Situations Où la Location est Rentable</h3>
+    <ul class="list-disc pl-6 space-y-2 my-4">
+        <li><strong>Convalescence post-opératoire :</strong> Après une opération du genou, de la hanche ou du cœur, la montée des marches est interdite ou pénible pendant 3 à 9 mois.</li>
+        <li><strong>Retour d'hospitalisation précipité :</strong> Pour sécuriser le retour à domicile d'un proche âgé en attendant d'organiser des travaux plus lourds (ou une place en EHPAD).</li>
+        <li><strong>Hébergement temporaire :</strong> Vous accueillez un parent dépendant chez vous pour l'hiver ou une période donnée.</li>
+        <li><strong>Fin de vie à domicile :</strong> Pour accompagner un proche en soins palliatifs avec dignité, sans investir dans une installation définitive coûteuse.</li>
+    </ul>
+
+    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+        <h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4>
+        <p class="text-blue-800">
+            La règle d'or est la suivante : <strong>si votre besoin est inférieur à 18 mois, louez. Au-delà, achetez.</strong> 
+            Avec les aides actuelles (MaPrimeAdapt'), l'achat devient souvent plus économique dès la deuxième année d'utilisation. Faites le calcul précis avant de signer !
+        </p>
+    </div>
+
+    <h2>Combien Coûte la Location d'un Monte-Escalier en 2026 ?</h2>
+
+    <p>Contrairement à une idée reçue, louer un monte-escalier n'est pas "bon marché". Le coût global se compose de plusieurs postes qu'il faut additionner pour ne pas avoir de surprise.</p>
+
+    <h3>1. Les Frais d'Installation (Le "Ticket d'Entrée")</h3>
+    <p>C'est la dépense la plus lourde. Même pour une location, un technicien doit venir installer le rail sur-mesure ou ajuster un rail standard. Ces frais sont <strong>à fonds perdus</strong>.</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+        <li>Pour un <strong>escalier droit</strong> : 800€ à 1 500€ TTC.</li>
+        <li>Pour un <strong>escalier tournant</strong> : 2 000€ à 3 500€ TTC (car le rail est souvent spécifique).</li>
+    </ul>
+
+    <h3>2. Le Loyer Mensuel</h3>
+    <p>Il couvre la mise à disposition du matériel, mais aussi (et c'est crucial) la maintenance et le dépannage 24/7.</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+        <li><strong>Monte-escalier droit</strong> : 90€ à 150€ / mois.</li>
+        <li><strong>Monte-escalier tournant</strong> : 250€ à 400€ / mois (offre plus rare).</li>
+    </ul>
+
+    <h3>3. La Caution et le Démontage</h3>
+    <p>La plupart des loueurs demandent une caution (non encaissée) de 1 000€ à 2 000€. Vérifiez également si les frais de démontage en fin de contrat sont inclus ou facturés en plus (environ 300€).</p>
+
+    <h2>Comparatif Chiffré : Achat vs Location (Sur 2 Ans)</h2>
+    <p>Prenons l'exemple d'un couple modeste (éligible à MaPrimeAdapt') avec un escalier droit standard.</p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
+            <thead class="bg-slate-100">
+                <tr>
+                    <th class="border p-4 text-left font-bold text-slate-700">Poste de Dépense</th>
+                    <th class="border p-4 text-left font-bold text-slate-700">Option Location (24 mois)</th>
+                    <th class="border p-4 text-left font-bold text-slate-700">Option Achat (Neuf)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-3">Installation / Achat</td>
+                    <td class="border p-3 text-red-600">1 200€ (perdus)</td>
+                    <td class="border p-3">3 500€</td>
+                </tr>
+                <tr>
+                    <td class="border p-3">Mensualités</td>
+                    <td class="border p-3">120€ x 24 = 2 880€</td>
+                    <td class="border p-3">0€</td>
+                </tr>
+                <tr>
+                    <td class="border p-3">Entretien (2 ans)</td>
+                    <td class="border p-3 text-green-600">Inclus</td>
+                    <td class="border p-3">~300€</td>
+                </tr>
+                <tr class="bg-slate-50 font-bold">
+                    <td class="border p-3">COÛT TOTAL BRUT</td>
+                    <td class="border p-3">4 080€</td>
+                    <td class="border p-3">3 800€</td>
+                </tr>
+                <tr>
+                    <td class="border p-3">Aide MaPrimeAdapt' (50%)</td>
+                    <td class="border p-3 text-gray-400">Non éligible ❌</td>
+                    <td class="border p-3 text-green-600">- 1 750€ ✅</td>
+                </tr>
+                <tr>
+                    <td class="border p-3">Crédit d'Impôt</td>
+                    <td class="border p-3 text-gray-400">Non éligible ❌</td>
+                    <td class="border p-3 text-green-600">- 437€ ✅</td>
+                </tr>
+                <tr class="bg-orange-100 text-lg font-bold text-orange-900">
+                    <td class="border p-3">RESTE À CHARGE FINAL</td>
+                    <td class="border p-3">4 080€</td>
+                    <td class="border p-3">1 613€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><strong>Constat sans appel :</strong> Pour ce couple, l'achat est plus rentable dès la première année grâce aux aides d'État qui ne s'appliquent pas à la location.</p>
+
+    <div class="my-8 text-center">
+        <a href="/calculateur-aides" class="inline-block bg-orange-600 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors shadow-lg transform hover:scale-105">
+            Simuler mes aides en 2 minutes
+        </a>
+    </div>
+
+    <h2>Les Aides Financières : Le Talon d'Achille de la Location</h2>
+    <p>C'est le point faible majeur. L'État français encourage l'adaptation durable des logements, pas le provisoire.</p>
+    <ul class="list-disc pl-6 space-y-2 mb-4">
+        <li><strong>MaPrimeAdapt'</strong> : Ne finance que l'achat et la pose définitive.</li>
+        <li><strong>Crédit d'Impôt (25%)</strong> : Idem, réservé aux équipements installés à demeure.</li>
+        <li><strong>APA et PCH</strong> : Ces aides départementales peuvent, <em>selon les départements</em>, prendre en charge une partie des frais de location si cela fait partie du plan de compensation. Renseignez-vous impérativement auprès de votre assistante sociale avant de signer.</li>
+    </ul>
+
+    <h2>Les Pièges à Éviter dans le Contrat de Location</h2>
+    <p>Si vous optez pour la location, soyez vigilant sur ces clauses contractuelles :</p>
+
+    <h3>1. La Durée d'Engagement Minimale</h3>
+    <p>Beaucoup de contrats imposent <strong>6 à 12 mois minimum</strong>. Si l'utilisateur décède ou part en maison de retraite au bout de 2 mois, vous devrez payer les mois restants. Négociez une clause de "résiliation sans frais pour force majeure" (décès, hospitalisation longue).</p>
+
+    <h3>2. L'État du Matériel</h3>
+    <p>Vous louerez souvent un matériel <strong>reconditionné</strong> (seul le rail est neuf ou adapté). Exigez de voir l'appareil et vérifiez l'année de fabrication des batteries. Des batteries neuves sont indispensables pour éviter les pannes.</p>
+
+    <h3>3. Le "Rail Type"</h3>
+    <p>Pour baisser les coûts, certains loueurs installent des rails standards qui peuvent empiéter sur l'escalier et gêner les autres occupants. Vérifiez bien l'encombrement replié.</p>
+
+    <h2>Où Trouver un Installateur Proposant la Location ?</h2>
+    <p>Les grands fabricants (Stannah, Thyssenkrupp) privilégient la vente. Pour louer, tournez-vous vers les <strong>installateurs indépendants régionaux</strong> qui gèrent leur propre stock de matériel reconditionné.</p>
+    
+    <p>Que vous soyez en <a href='/annuaire/finistere-29' class='text-orange-600 hover:underline'>Finistère</a> pour une résidence secondaire ou dans le <a href='/annuaire/nord-59' class='text-orange-600 hover:underline'>Nord</a>, nous pouvons vous mettre en relation avec des professionnels proposant cette option rare.</p>
+
+    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+        <h4 class="text-blue-900 font-bold text-lg mb-2">💡 Le Conseil de l'Expert</h4>
+        <p class="text-blue-800">
+            Demandez toujours une option d'achat (LOA). Si finalement le besoin dure plus longtemps que prévu, vous pourrez racheter l'appareil en déduisant une partie des loyers déjà versés. C'est le meilleur moyen de ne pas perdre d'argent.
+        </p>
+    </div>
+        `
+    },
+    {
         slug: "tarif-horaire-technicien-monte-escalier",
         title: "Tarif Horaire d'un Technicien Monte-Escalier en 2026 : Grille Complète",
         excerpt: "Quel est le tarif horaire d'un technicien monte-escalier en 2026 ? De 45€ à 90€/h selon l'intervention. Découvrez la grille tarifaire complète et les aides.",
